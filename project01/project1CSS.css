@@ -52,6 +52,11 @@ button:hover{
 	font-size: 1.2em;
 	font-weight: bold;
 }
+
+.box{
+	position: relative;
+	left: 350px;
+}
 #current{
 	background-color: #F0EFFF;
 	position: fixed;
