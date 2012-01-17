@@ -45,6 +45,10 @@ button:hover{
 	color: #00FF00;
 }
 
+#italian{
+	font-weight: bold;
+	font-family: "Calibri (Body)",Verdana, Ariel; 
+	}
 #current{
 	background-color: #F0EFFF;
 	}
