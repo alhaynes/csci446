@@ -6,16 +6,16 @@ class Player
 	
 	puts "Counter? #{@@counter}"
 	
-	if @@counter < 3
-		if warrior.feel(:backward).captive?
-				warrior.rescue!:backward
+	if @@counter <= 2
+		if warrior.feel.wall?
+				warrior.pivot!
 		else 
-			warrior.walk!:backward
+			warrior.walk!
 
 		end
 		
 	
-	elsif(@@counter >= 3)
+	elsif(@@counter > 2)
 		if(@@prev_health <= warrior.health)
 			if warrior.feel(:backward).captive? and warrior.health < 20
 				warrior.rest!
