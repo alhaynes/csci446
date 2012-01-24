@@ -1,16 +1,28 @@
 class Player
+	@@prev_health = 20
+	
   def play_turn(warrior)
     # add your code here - Will DO! **Alyse Haynes**
+	 
+	 
+	if(@@prev_health <= warrior.health)
+		if warrior.feel.empty? and warrior.health >=20
+			warrior.walk!
+		elsif warrior.feel.empty? and warrior.health < 20
+			warrior.rest!
+		elsif
+			warrior.attack!
+		end
 	
-	if warrior.feel.empty? and warrior.health < 20
-		warrior.rest!
-		
-	elsif warrior.feel.empty? and warrior.health >= 20
-		warrior.walk!
+	elsif warrior.health < @@prev_health
+		if warrior.feel.empty? 
+			warrior.walk!
+		elsif
+			warrior.attack!
+		end 
+	end
 	
-	elsif
-		warrior.attack!
-	end # end 'if' statement
-  
+	@@prev_health = warrior.health
+	
   end # end play_turn 
 end #end class Player
