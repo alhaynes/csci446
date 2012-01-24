@@ -10,6 +10,8 @@ class Player
 			warrior.walk!
 		elsif warrior.feel.empty? and warrior.health < 20
 			warrior.rest!
+		elsif warrior.feel.captive?
+			warrior.rescue!
 		elsif
 			warrior.attack!
 		end
@@ -17,6 +19,8 @@ class Player
 	elsif warrior.health < @@prev_health
 		if warrior.feel.empty? 
 			warrior.walk!
+		elsif warrior.feel.captive?
+			warrior.rescue!
 		elsif
 			warrior.attack!
 		end 
