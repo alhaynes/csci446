@@ -29,7 +29,14 @@
 		  </tr>
 		<% end %>
 	</tbody>
-
+	
+	<tfoot>
+		<tr>
+			<td colspan="6">
+				<p><%= pluralize(@articles.size, 'article')%></p>
+			</td>
+		</tr>
+	</tfoot>
 <br />
 
 
