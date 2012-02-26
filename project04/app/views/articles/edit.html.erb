@@ -1,6 +1,17 @@
-<h1>Editing article</h1>
+<%= content_for :subtitle do %>
+... my cousin works for Bit.ly
+<%end%>
+
+<ul class = "menu">
+	<li>
+		<%= link_to image_tag('arrow_left.png'), articles_path, :title => 'Show article list' %>
+		<%= link_to 'back', articles_path, :title => 'Show article list' %> 
+	</li>
+</ul>
+	
+<h3>Editing "<%=h @article.title %>"</h3>
+<br/>
 
 <%= render 'form' %>
 
-<%= link_to 'Show', @article %> |
-<%= link_to 'Back', articles_path %>
+
