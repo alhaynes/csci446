@@ -6,6 +6,7 @@ class Article < ActiveRecord::Base
 	validate :no_pats
 	
 	
+	
 	private
 	
 		def no_pats
@@ -13,5 +14,6 @@ class Article < ActiveRecord::Base
 			errors.add(:author, " Error: No authors named Pat aloud due to excessive baggage.") 
 		  end
 		end
+
 	
 end
