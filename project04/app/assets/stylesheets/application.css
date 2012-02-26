@@ -39,6 +39,16 @@ table@articles_list {
 	border-collapse: collapse;
 	width: 100%;
 	}
+
+tr.even td{
+	background-color: #FFB6C1;
+	color: black;
+	}
+
+tr.odd td{
+	background-color: #66CDAA;
+	color: black;
+	}
 	
 table@articles_list tbody{
 	height: 400px;
