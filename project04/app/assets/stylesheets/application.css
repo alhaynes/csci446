@@ -34,10 +34,11 @@ h3 span.ui{
 	font-size: 1em;
 	}
 	
-table@articles_list {
+table#article{
 	margin-top: 2em;
 	border-collapse: collapse;
-	width: 100%;
+	width: 1000px;
+	overflow: auto;
 	}
 
 tr.even td{
@@ -49,21 +50,22 @@ tr.odd td{
 	background-color: #66CDAA;
 	color: black;
 	}
-	
-table@articles_list tbody{
+
+table#article tbody{
 	height: 400px;
 	overflow: auto;
 	}
 	
-table@articles_list td {
-	margin: 10px 0;
+table#article td {
+	margin: 10px 0px;
 	padding: 10px;
 	}
 
 .article_body {
+	width: 50%;
 	font-family: "Comic Sans MS", "Times New Roman", Arial;
 	font-size: 1em;
-	line-height: 2em;
+	line-height: 1.5em;
 	}
 	
 ul.menu {

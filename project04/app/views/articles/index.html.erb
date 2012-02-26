@@ -1,3 +1,7 @@
+<% content_for :subtitle do %>
+...with a name .com hipsters love!
+<%end%>
+
 <h3> All the World's Articles
 	<span class="ui">
 		<%= link_to image_tag('add.png'), new_article_path, :title => "click here to create an article!" %>
@@ -7,7 +11,7 @@
 
 <br/>
 
-<table id="articles_list">
+<table id="article">
 	<thead>  
 	  <tr>
 		<th>Title</th>
