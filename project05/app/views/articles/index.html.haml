@@ -1,0 +1,32 @@
+- content_for :subtitle do
+  \...with a name .com hipsters love!
+%h3
+  All the World's Articles
+  %span.ui
+    = link_to image_tag('add.png'), new_article_path, :title => "click here to create an article!"
+    = link_to 'Create an Article', new_article_path, :title => 'create a new article'
+%br/
+%table#article
+  %thead
+    %tr
+      %th Title
+      %th Author
+      %th Body
+      %th Creation Date
+      %th
+  %tbody
+    - @articles.each do |article|
+      %tr{:class => cycle('even', 'odd')}
+        %td= article.title
+        %td= article.author
+        %td= truncate(article.body, :length => 15)
+        %td= article.created_at
+        %td
+          = link_to image_tag('page_white_magnify.png'), article, :title => "Show me the article!"
+          = link_to image_tag('pencil.png'), edit_article_path(article), :title => "Edit this article"
+          = link_to image_tag('page_delete.png'), article, confirm: 'Are you sure?', method: :delete, :title => "Delete this article"
+  %tfoot
+    %tr
+      %td{:colspan => "6"}
+        %p= pluralize(@articles.size, 'article')
+%br/

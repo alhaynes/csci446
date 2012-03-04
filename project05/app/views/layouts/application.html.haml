@@ -1,0 +1,15 @@
+!!!
+%html
+  %head
+    %title Articles -- All the World's Articles (with a name .com hipsters love)
+    = stylesheet_link_tag    'application.css'
+  %body
+    #article_stuff
+      %h1 Articl.es
+      %h2= yield :subtitle
+      %br/
+      %br/
+      %ul.menubar
+        %li= link_to "articles", articles_path
+        %li= link_to "authors", "#"
+      = yield
