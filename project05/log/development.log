@@ -8632,3 +8632,121 @@ Served asset /pencil.png - 304 Not Modified (2ms)
 
 Started GET "/assets/page_delete.png" for 127.0.0.1 at 2012-03-03 20:31:04 -0700
 Served asset /page_delete.png - 304 Not Modified (1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-03-04 15:05:39 -0700
+  Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (7.0ms)[0m  SELECT "articles".* FROM "articles" 
+Rendered articles/index.html.erb (585.0ms)
+Completed 200 OK in 894ms (Views: 746.0ms | ActiveRecord: 8.0ms)
+
+
+Started GET "/assets/page_white_magnify.png" for 127.0.0.1 at 2012-03-04 15:05:44 -0700
+Served asset /page_white_magnify.png - 304 Not Modified (39ms)
+
+
+Started GET "/assets/page_delete.png" for 127.0.0.1 at 2012-03-04 15:05:44 -0700
+Served asset /page_delete.png - 304 Not Modified (31ms)
+
+
+Started GET "/assets/pencil.png" for 127.0.0.1 at 2012-03-04 15:05:44 -0700
+Served asset /pencil.png - 304 Not Modified (28ms)
+
+
+Started GET "/assets/add.png" for 127.0.0.1 at 2012-03-04 15:05:44 -0700
+Served asset /add.png - 304 Not Modified (24ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-03-04 15:15:51 -0700
+  Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (1.0ms)[0m  [1mSELECT "articles".* FROM "articles" [0m
+Completed 500 Internal Server Error in 21ms
+
+ActionView::MissingTemplate (Missing template articles/index, application/index with {:handlers=>[:erb, :builder, :coffee], :formats=>[:html], :locale=>[:en, :en]}. Searched in:
+  * "c:/Users/Alyse/Documents/cs446/src/project05/app/views"
+):
+  app/controllers/articles_controller.rb:8:in `index'
+
+Rendered c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (29.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-03-04 15:30:49 -0700
+  Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (1.0ms)[0m  [1mSELECT "articles".* FROM "articles" [0m
+Rendered articles/index.html.haml within layouts/application (359.0ms)
+Completed 200 OK in 836ms (Views: 831.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/add.png" for 127.0.0.1 at 2012-03-04 15:31:00 -0700
+Served asset /add.png - 304 Not Modified (7ms)
+
+
+Started GET "/assets/page_white_magnify.png" for 127.0.0.1 at 2012-03-04 15:31:00 -0700
+Served asset /page_white_magnify.png - 304 Not Modified (6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-03-04 15:31:00 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pencil.png" for 127.0.0.1 at 2012-03-04 15:31:00 -0700
+Served asset /pencil.png - 304 Not Modified (7ms)
+
+
+Started GET "/assets/page_delete.png" for 127.0.0.1 at 2012-03-04 15:31:00 -0700
+Served asset /page_delete.png - 304 Not Modified (4ms)
+
+
+Started GET "/articles/14" for 127.0.0.1 at 2012-03-04 15:34:04 -0700
+  Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[35mArticle Load (0.0ms)[0m  SELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", "14"]]
+Rendered articles/show.html.haml within layouts/application (229.0ms)
+Completed 200 OK in 258ms (Views: 253.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-03-04 15:34:04 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/page_delete.png" for 127.0.0.1 at 2012-03-04 15:34:04 -0700
+Served asset /page_delete.png - 304 Not Modified (3ms)
+
+
+Started GET "/assets/pencil.png" for 127.0.0.1 at 2012-03-04 15:34:04 -0700
+Served asset /pencil.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/arrow_left.png" for 127.0.0.1 at 2012-03-04 15:34:04 -0700
+Served asset /arrow_left.png - 304 Not Modified (19ms)
+
+
+Started GET "/assets/email.png" for 127.0.0.1 at 2012-03-04 15:34:04 -0700
+Served asset /email.png - 304 Not Modified (4ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2012-03-04 15:34:09 -0700
+  Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (1.0ms)[0m  [1mSELECT "articles".* FROM "articles" [0m
+Rendered articles/index.html.haml within layouts/application (91.0ms)
+Completed 200 OK in 121ms (Views: 117.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-03-04 15:34:09 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/page_white_magnify.png" for 127.0.0.1 at 2012-03-04 15:34:09 -0700
+Served asset /page_white_magnify.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/add.png" for 127.0.0.1 at 2012-03-04 15:34:09 -0700
+Served asset /add.png - 304 Not Modified (3ms)
+
+
+Started GET "/assets/pencil.png" for 127.0.0.1 at 2012-03-04 15:34:09 -0700
+Served asset /pencil.png - 304 Not Modified (3ms)
+
+
+Started GET "/assets/page_delete.png" for 127.0.0.1 at 2012-03-04 15:34:09 -0700
+Served asset /page_delete.png - 304 Not Modified (2ms)
