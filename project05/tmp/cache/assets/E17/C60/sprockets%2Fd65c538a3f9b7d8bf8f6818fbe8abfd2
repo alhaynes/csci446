@@ -1,0 +1,17 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1330129006.7734:@value{I"
+class:EFI"StaticAsset;
+FI"id;
+F"%309f86baeadc305ddc3a3129155e8f54I"logical_path;
+FI"page_delete.png;
+TI"pathname;
+FI",$root/app/assets/images/page_delete.png;
+FI"content_type;
+FI"image/png;
+FI"
+mtime;
+FI"2012-02-24T17:15:03-07:00;
+FI"length;
+FI"740;
+FI"digest;
+F"%88e68a07950bdee1f9b1c6eba36678fbI"_version;
+F"%46dde6621c301f4928e3b34efee9e3b5

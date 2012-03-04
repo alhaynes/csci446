@@ -1,0 +1,17 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1330129006.7073998:@value{I"
+class:EFI"StaticAsset;
+FI"id;
+F"%38d9857e532d782af349dfbd9861c59dI"logical_path;
+FI"pencil.png;
+TI"pathname;
+FI"'$root/app/assets/images/pencil.png;
+FI"content_type;
+FI"image/png;
+FI"
+mtime;
+FI"2012-02-24T17:14:28-07:00;
+FI"length;
+FI"450;
+FI"digest;
+F"%8573f15cd3a6191cfcc349f022979fbfI"_version;
+F"%46dde6621c301f4928e3b34efee9e3b5

@@ -1,0 +1,73 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1330133368.2761998:@value{	I"length:EFijI"digest;
+F"%2248b21aeb81fab112d46eab59df42c6I"source;
+FI"jbody {
+	font-family: "Comic Sans MS", "Times New Roman", Arial;
+	padding: 0;
+	margin: 0;
+	font-size: 2.5em;
+	}
+
+#article_stuff {
+	width: 890px;
+	margin: auto;
+	padding: 0 1em 1em 1em;
+	font-size: .5em;
+	}
+
+h1{
+	margin: 0;
+	text-align: center;
+	font-size: 3em;
+	}
+
+h2{
+	margin: 0 0 1em 0;
+	text-align: center;
+	font-size: 1em;
+	}
+	
+h3{
+	margin: 0;
+	font-size: 1.5em;
+	}
+
+h3 span.ui{
+	margin-left: 3em;
+	font-size: 1em;
+	}
+	
+table@articles_list {
+	margin-top: 2em;
+	border-collapse: collapse;
+	width: 890px;
+	}
+	
+table@articles_list tbody{
+	height: 400px;
+	overflow: auto;
+	}
+	
+table@articles_list td {
+	margin: 10px 0;
+	padding: 10px;
+	}
+
+.article_body {
+	font-family: "Comic Sans MS", "Times New Roman", Arial;
+	font-size: 1em;
+	line-height: 2em;
+	}
+	
+ul.menu {
+	list-style-type: none;
+	margin: 2em 0;
+	padding: 0;
+	}
+	
+ul.menu li {
+	display: inline;
+	margin-right: 4em;
+	}
+;
+FI"_version;
+F"%cdf44d8d54835f2b1fab9a3de0c71ec0

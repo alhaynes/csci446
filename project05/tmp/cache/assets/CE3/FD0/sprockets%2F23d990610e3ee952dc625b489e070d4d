@@ -1,0 +1,17 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1330129006.6713998:@value{I"
+class:EFI"StaticAsset;
+FI"id;
+F"%647fe6ddb675d2b0b336f2183b12864aI"logical_path;
+FI"page_white_magnify.png;
+TI"pathname;
+FI"3$root/app/assets/images/page_white_magnify.png;
+FI"content_type;
+FI"image/png;
+FI"
+mtime;
+FI"2012-02-24T17:13:45-07:00;
+FI"length;
+FI"554;
+FI"digest;
+F"%8979864c5bca19072c07e1e92b3d6bd8I"_version;
+F"%46dde6621c301f4928e3b34efee9e3b5

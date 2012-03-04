@@ -1,0 +1,31 @@
+<%= content_for :subtitle do %>
+what's "Articl" in Spanish anyway?
+<%end%>
+
+<ul class = "menu">
+	<li>
+		<%= link_to image_tag('arrow_left.png'), articles_path, :title => 'Show article list' %>
+		<%= link_to 'back', articles_path, :title => 'Show article list' %> 
+	</li>
+	<li>
+		<%= link_to image_tag('pencil.png'), edit_article_path(@article), :title => "Edit this article" %>
+		<%= link_to 'edit', edit_article_path(@article), :title => 'edit article' %>
+	</li>
+	<li>
+		<%= link_to image_tag('page_delete.png'), @article, :confirm => 'Are you sure?', :method => :delete, :title => "Delete this article" %>
+		<%= link_to 'delete', @article, :confirm => 'Are you sure?', :method => :delete, :title => "Delete this article" %>
+	</li>
+	<li>
+		<%= mail_to '', image_tag('email.png'), :subject => @article.title, :body => article_url(@article), :title => 'email article' %>
+		<%= mail_to '', 'email', :subject => @article.title, :body => article_url(@article), :title => 'email article' %>
+	</li>
+</ul>
+
+<h2><%=h @article.title %></h2>
+<p class = "byline">by <%=h @article.author %>. __ updates since
+<%= @article.created_at %> </p>
+</p>
+
+<div class="body">
+	<%= simple_format(h(@article.body)) %>
+</div>
