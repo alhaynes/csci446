@@ -1,6 +1,6 @@
-o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1330295488.352:@value{	I"length:EFiGI"digest;
-F"%5858d167670971a525cda7f28fa2ee52I"source;
-FI"Gbody {
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1330831864.0881999:@value{	I"length:EFiôI"digest;
+F"%673287e8777409f740d9d781dc80a86aI"source;
+FI"ôbody {
 	font-family: "Comic Sans MS", "Times New Roman", Arial;
 	padding: 0;
 	margin: 0;
@@ -90,6 +90,18 @@ input[type="submit"]{
 	margin-left: 100px;
 	}
 	
+ul.menubar {
+	list-style-type: none;
+	margin: 0px 0px 20px 0px;
+	padding: 10px;
+	background-color: #F0F0F0;
+	}
+	
+ul.menubar li {
+	display: inline;
+	margin-right: 100px;
+}
+	
 ;
 FI"_version;
-F"%610f1c60c8fbe0b44a8375c3e3dc6e69
+F"%98d54b9e16fc7975a3e70370984ab17e
