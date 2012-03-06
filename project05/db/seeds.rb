@@ -8,11 +8,46 @@
 
 Article.delete_all
 
-Article.create(title: 'Man this article is sweet',
-author: 'Alyse Haynes',
-body: %{
-	This article about articles is probably the sweetest article you'll ever read. 
-	Articles have a very article quality about them that you'll find extremly articly.
-	An article article is something that every article should have. Article.
-	})
+article_attributes =[
+	{ :title => 'Man this article is sweet',
+		:body =>
+	'This article about articles is probably the sweetest article youll ever read. 
+	Articles have a very article quality about them that youll find extremly articly.
+	An article article is something that every article should have. Article.' },
+	{ :title => 'Man this article is sweet',
+		:body =>
+	'This article about articles is probably the sweetest article youll ever read. 
+	Articles have a very article quality about them that youll find extremly articly.
+	An article article is something that every article should have. Article.'},
+	{:title => 'Man this article is sweet',
+		:body =>
+	'This article about articles is probably the sweetest article youll ever read. 
+	Articles have a very article quality about them that youll find extremly articly.
+	An article article is something that every article should have. Article.' },
+	{:title => 'Man this article is sweet',
+		:body =>
+	'This article about articles is probably the sweetest article youll ever read. 
+	Articles have a very article quality about them that youll find extremly articly.
+	An article article is something that every article should have. Article.' },
+	{:title => 'Man this article is sweet',
+		:body =>
+	'This article about articles is probably the sweetest article youll ever read. 
+	Articles have a very article quality about them that youll find extremly articly.
+	An article article is something that every article should have. Article.'},
+	{:title => 'Man this article is sweet',
+		:body =>
+	'This article about articles is probably the sweetest article youll ever read. 
+	Articles have a very article quality about them that youll find extremly articly.
+	An article article is something that every article should have. Article.' },
+	{:title => 'Man this article is sweet',
+		:body =>
+	'This article about articles is probably the sweetest article youll ever read. 
+	Articles have a very article quality about them that youll find extremly articly.
+	An article article is something that every article should have. Article.' }
+	]
+
+	
+	article_attributes.each do |attribute|
+		Article.create!(attribute)
+	end
 	

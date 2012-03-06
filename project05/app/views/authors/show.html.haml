@@ -5,7 +5,9 @@
   %br/
   = image_tag @author.photo.url
   %br/
-  %b Articles Wrote:
+  - for article in @author.articles
+    = article.title
+    %br/
 
   
 = link_to 'Edit', edit_author_path(@author)
