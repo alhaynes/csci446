@@ -10808,3 +10808,351 @@ Completed 200 OK in 36ms (Views: 32.0ms | ActiveRecord: 1.0ms)
 
 Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-03-05 21:49:23 -0700
 Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/authors/1" for 127.0.0.1 at 2012-03-05 21:52:47 -0700
+  Processing by AuthorsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mAuthor Load (0.0ms)[0m  SELECT "authors".* FROM "authors" WHERE "authors"."id" = ? LIMIT 1  [["id", "1"]]
+Rendered authors/show.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 38ms (Views: 34.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-03-05 21:52:48 -0700
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2012-03-05 22:15:22 -0700
+  Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (1.0ms)[0m  [1mSELECT "articles".* FROM "articles" [0m
+Rendered articles/index.html.haml within layouts/application (139.0ms)
+Completed 500 Internal Server Error in 164ms
+
+ActionView::Template::Error (Inconsistent indentation: 1 tab was used for indentation, but the rest of the document was indented using 2 spaces.):
+    30:       %td{:colspan => "6"}
+    31:         %p= pluralize(@articles.size, 'article')
+    32: 		
+    33: 	@articles = Article.paginate :page=>params[:page], :per_page=>10, :order='create_at desc'
+    34: %br/
+  app/views/articles/index.html.haml:33
+  app/controllers/articles_controller.rb:8:in `index'
+
+Rendered c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+Rendered c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+Rendered c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (39.0ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2012-03-05 22:15:35 -0700
+  Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (1.0ms)[0m  SELECT "articles".* FROM "articles" 
+Rendered articles/index.html.haml within layouts/application (150.0ms)
+Completed 200 OK in 186ms (Views: 181.0ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-03-05 22:15:35 -0700
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/add.png" for 127.0.0.1 at 2012-03-05 22:15:35 -0700
+Served asset /add.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/page_white_magnify.png" for 127.0.0.1 at 2012-03-05 22:15:35 -0700
+Served asset /page_white_magnify.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/pencil.png" for 127.0.0.1 at 2012-03-05 22:15:35 -0700
+Served asset /pencil.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/page_delete.png" for 127.0.0.1 at 2012-03-05 22:15:35 -0700
+Served asset /page_delete.png - 304 Not Modified (3ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2012-03-05 22:16:24 -0700
+
+SyntaxError (c:/Users/Alyse/Documents/cs446/src/project05/app/controllers/articles_controller.rb:7: syntax error, unexpected tSTRING_BEG, expecting tASSOC
+...:page], :per_page=>10, :order='create_at desc'
+...                               ^):
+  
+
+Rendered c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+Rendered c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+Rendered c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (23.0ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2012-03-05 22:17:10 -0700
+
+SyntaxError (c:/Users/Alyse/Documents/cs446/src/project05/app/controllers/articles_controller.rb:8: syntax error, unexpected tSTRING_BEG, expecting tASSOC
+...:page], :per_page=>10, :order='create_at desc'
+...                               ^):
+  
+
+Rendered c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+Rendered c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (15.0ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2012-03-05 22:17:12 -0700
+
+SyntaxError (c:/Users/Alyse/Documents/cs446/src/project05/app/controllers/articles_controller.rb:8: syntax error, unexpected tSTRING_BEG, expecting tASSOC
+...:page], :per_page=>10, :order='create_at desc'
+...                               ^):
+  
+
+Rendered c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (53.0ms)
+Rendered c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+Rendered c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (69.0ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2012-03-05 22:17:29 -0700
+
+SyntaxError (c:/Users/Alyse/Documents/cs446/src/project05/app/controllers/articles_controller.rb:8: syntax error, unexpected tSTRING_BEG, expecting tASSOC
+...:page], :per_page=>10, :order='create_at_desc'
+...                               ^):
+  
+
+Rendered c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.0ms)
+Rendered c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+Rendered c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (17.0ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2012-03-05 22:18:45 -0700
+
+SyntaxError (c:/Users/Alyse/Documents/cs446/src/project05/app/controllers/articles_controller.rb:6: syntax error, unexpected tSTRING_BEG, expecting tASSOC
+...:page], :per_page=>10, :order='create_at desc'
+...                               ^):
+  
+
+Rendered c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+Rendered c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+Rendered c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (16.0ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2012-03-05 22:19:06 -0700
+
+SyntaxError (c:/Users/Alyse/Documents/cs446/src/project05/app/controllers/articles_controller.rb:6: syntax error, unexpected tSTRING_BEG, expecting tASSOC
+...page], :per_page=>10, :order= 'create_at desc'
+...                               ^):
+  
+
+Rendered c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+Rendered c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (10.0ms)
+Rendered c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (25.0ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2012-03-05 22:19:14 -0700
+
+SyntaxError (c:/Users/Alyse/Documents/cs446/src/project05/app/controllers/articles_controller.rb:6: syntax error, unexpected tSTRING_BEG, expecting tASSOC
+...page], :per_page=>10, :order= 'Create_at desc'
+...                               ^):
+  
+
+Rendered c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+Rendered c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+Rendered c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (17.0ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2012-03-05 22:19:26 -0700
+
+SyntaxError (c:/Users/Alyse/Documents/cs446/src/project05/app/controllers/articles_controller.rb:6: syntax error, unexpected tIDENTIFIER, expecting tASSOC
+...per_page=>10, :order= create_at desc
+...                               ^):
+  
+
+Rendered c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+Rendered c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (14.0ms)
+Rendered c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (29.0ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2012-03-05 22:19:35 -0700
+
+SyntaxError (c:/Users/Alyse/Documents/cs446/src/project05/app/controllers/articles_controller.rb:6: syntax error, unexpected tIDENTIFIER, expecting tASSOC
+...per_page=>10, :order= create_at 'desc'
+...                               ^):
+  
+
+Rendered c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+Rendered c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+Rendered c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (35.0ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2012-03-05 22:19:50 -0700
+  Processing by ArticlesController#index as HTML
+Completed 500 Internal Server Error in 1ms
+
+NoMethodError (undefined method `paginate' for #<Class:0x3b46cc0>):
+  app/controllers/articles_controller.rb:6:in `index'
+
+Rendered c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+Rendered c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+Rendered c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (16.0ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2012-03-05 22:20:02 -0700
+
+SyntaxError (c:/Users/Alyse/Documents/cs446/src/project05/app/controllers/articles_controller.rb:6: syntax error, unexpected tSTRING_BEG, expecting tASSOC
+...page], :per_page=>10, :order= 'create_at desc'
+...                               ^):
+  
+
+Rendered c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+Rendered c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+Rendered c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (16.0ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2012-03-05 22:20:27 -0700
+
+SyntaxError (c:/Users/Alyse/Documents/cs446/src/project05/app/controllers/articles_controller.rb:6: syntax error, unexpected tSTRING_BEG, expecting tASSOC
+...e], :per_page=>10, :by_order= 'create_at desc'
+...                               ^):
+  
+
+Rendered c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+Rendered c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+Rendered c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (16.0ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2012-03-05 22:21:08 -0700
+
+SyntaxError (c:/Users/Alyse/Documents/cs446/src/project05/app/controllers/articles_controller.rb:6: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+...], :per_page=>10, :order=> by 'create_at desc'
+...                               ^):
+  
+
+Rendered c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+Rendered c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+Rendered c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (16.0ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2012-03-05 22:21:24 -0700
+
+SyntaxError (c:/Users/Alyse/Documents/cs446/src/project05/app/controllers/articles_controller.rb:6: syntax error, unexpected tSTRING_BEG, expecting tASSOC
+...page], :per_page=>10, :order= 'create_by desc'
+...                               ^):
+  
+
+Rendered c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+Rendered c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+Rendered c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (16.0ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2012-03-05 22:22:44 -0700
+  Processing by ArticlesController#index as HTML
+Completed 500 Internal Server Error in 2ms
+
+NoMethodError (undefined method `paginate' for #<Class:0x3c94e18>):
+  app/controllers/articles_controller.rb:6:in `index'
+
+Rendered c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+Rendered c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+Rendered c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (19.0ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2012-03-05 22:24:52 -0700
+  Processing by ArticlesController#index as HTML
+Completed 500 Internal Server Error in 3ms
+
+NoMethodError (undefined method `paginate' for #<Class:0x4232ac0>):
+  app/controllers/articles_controller.rb:6:in `index'
+
+Rendered c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.0ms)
+Rendered c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+Rendered c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (65.0ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2012-03-05 22:25:46 -0700
+  Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (1.0ms)[0m  [1mSELECT "articles".* FROM "articles" ORDER BY create_by desc LIMIT 10 OFFSET 0[0m
+SQLite3::SQLException: no such column: create_by: SELECT  "articles".* FROM "articles"  ORDER BY create_by desc LIMIT 10 OFFSET 0
+Rendered articles/index.html.haml within layouts/application (17.0ms)
+Completed 500 Internal Server Error in 277ms
+
+ActionView::Template::Error (SQLite3::SQLException: no such column: create_by: SELECT  "articles".* FROM "articles"  ORDER BY create_by desc LIMIT 10 OFFSET 0):
+    15:       %th Creation Date
+    16:       %th
+    17:   %tbody
+    18:     - @articles.each do |article|
+    19:       %tr{:class => cycle('even', 'odd')}
+    20:         %td= article.title
+    21:         %td= article.author_id
+  app/views/articles/index.html.haml:18:in `_app_views_articles_index_html_haml___276035711_32736288'
+  app/controllers/articles_controller.rb:8:in `index'
+
+Rendered c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+Rendered c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+Rendered c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (16.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-03-05 22:25:53 -0700
+  Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (1.0ms)[0m  SELECT "articles".* FROM "articles" ORDER BY create_by desc LIMIT 10 OFFSET 0
+SQLite3::SQLException: no such column: create_by: SELECT  "articles".* FROM "articles"  ORDER BY create_by desc LIMIT 10 OFFSET 0
+Rendered articles/index.html.haml within layouts/application (14.0ms)
+Completed 500 Internal Server Error in 49ms
+
+ActionView::Template::Error (SQLite3::SQLException: no such column: create_by: SELECT  "articles".* FROM "articles"  ORDER BY create_by desc LIMIT 10 OFFSET 0):
+    15:       %th Creation Date
+    16:       %th
+    17:   %tbody
+    18:     - @articles.each do |article|
+    19:       %tr{:class => cycle('even', 'odd')}
+    20:         %td= article.title
+    21:         %td= article.author_id
+  app/views/articles/index.html.haml:18:in `_app_views_articles_index_html_haml___276035711_32736288'
+  app/controllers/articles_controller.rb:8:in `index'
+
+Rendered c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.0ms)
+Rendered c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+Rendered c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (19.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-03-05 22:25:54 -0700
+  Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (1.0ms)[0m  [1mSELECT "articles".* FROM "articles" ORDER BY create_by desc LIMIT 10 OFFSET 0[0m
+SQLite3::SQLException: no such column: create_by: SELECT  "articles".* FROM "articles"  ORDER BY create_by desc LIMIT 10 OFFSET 0
+Rendered articles/index.html.haml within layouts/application (9.0ms)
+Completed 500 Internal Server Error in 30ms
+
+ActionView::Template::Error (SQLite3::SQLException: no such column: create_by: SELECT  "articles".* FROM "articles"  ORDER BY create_by desc LIMIT 10 OFFSET 0):
+    15:       %th Creation Date
+    16:       %th
+    17:   %tbody
+    18:     - @articles.each do |article|
+    19:       %tr{:class => cycle('even', 'odd')}
+    20:         %td= article.title
+    21:         %td= article.author_id
+  app/views/articles/index.html.haml:18:in `_app_views_articles_index_html_haml___276035711_32736288'
+  app/controllers/articles_controller.rb:8:in `index'
+
+Rendered c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.0ms)
+Rendered c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+Rendered c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (42.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-03-05 22:40:25 -0700
+  Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (23.0ms)[0m  SELECT "articles".* FROM "articles" ORDER BY created_at desc LIMIT 10 OFFSET 0
+  [1m[36m (1.0ms)[0m  [1mSELECT COUNT(*) FROM "articles" [0m
+Rendered articles/index.html.haml within layouts/application (281.0ms)
+Completed 200 OK in 347ms (Views: 321.0ms | ActiveRecord: 25.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-03-05 22:40:26 -0700
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/add.png" for 127.0.0.1 at 2012-03-05 22:40:26 -0700
+Served asset /add.png - 304 Not Modified (9ms)
+
+
+Started GET "/assets/page_white_magnify.png" for 127.0.0.1 at 2012-03-05 22:40:26 -0700
+Served asset /page_white_magnify.png - 304 Not Modified (4ms)
+
+
+Started GET "/assets/page_delete.png" for 127.0.0.1 at 2012-03-05 22:40:26 -0700
+Served asset /page_delete.png - 304 Not Modified (4ms)
+
+
+Started GET "/assets/pencil.png" for 127.0.0.1 at 2012-03-05 22:40:26 -0700
+Served asset /pencil.png - 304 Not Modified (8ms)

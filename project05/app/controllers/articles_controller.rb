@@ -2,8 +2,8 @@ class ArticlesController < ApplicationController
   # GET /articles
   # GET /articles.json
   before_filter :set_return_url, :only => [:edit]
-  def index
-    @articles = Article.all
+  def index			
+	@articles = Article.paginate page: params[:page], order: 'created_at desc', per_page: 10
 
     respond_to do |format|
       format.html # index.html.erb
