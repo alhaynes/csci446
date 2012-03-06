@@ -15,7 +15,7 @@
     = mail_to '', 'email', :subject => @article.title, :body => article_url(@article), :title => 'email article'
 %h2= h @article.title
 %p.byline
-  by #{h @article.author}. __ updates since
+  by #{h @article.author.name}. __ updates since
   \#{@article.created_at}
 .body
   = simple_format(h(@article.body))
