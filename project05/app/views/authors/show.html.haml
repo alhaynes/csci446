@@ -3,8 +3,10 @@
   %b Name:
   = @author.name
   %br/
+  = image_tag @author.photo.url
+  %br/
   %b Articles Wrote:
-  = @article.name
+
   
 = link_to 'Edit', edit_author_path(@author)
 |

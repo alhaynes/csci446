@@ -1,8 +1,8 @@
 class Author < ActiveRecord::Base
 	has_many :articles, :dependent => :destroy
+	has_attached_file :photo
 	
 	validates_presence_of :name
-	
 	validate :no_pats
 	
 	private

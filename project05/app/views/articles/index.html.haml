@@ -20,7 +20,7 @@
     - @articles.each do |article|
       %tr{:class => cycle('even', 'odd')}
         %td= article.title
-        %td= article.author_id
+        %td= article.author.name
         %td= truncate(article.body, :length => 15)
         %td= article.created_at
         %td
