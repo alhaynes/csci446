@@ -11242,3 +11242,170 @@ Served asset /add.png - 304 Not Modified (2ms)
 
 Started GET "/assets/page_delete.png" for 127.0.0.1 at 2012-03-05 22:44:39 -0700
 Served asset /page_delete.png - 304 Not Modified (3ms)
+
+
+Started GET "/articles?page=2" for 127.0.0.1 at 2012-03-05 22:45:38 -0700
+  Processing by ArticlesController#index as HTML
+  Parameters: {"page"=>"2"}
+  [1m[35m (1.0ms)[0m  SELECT COUNT(*) FROM "articles" 
+  [1m[36mArticle Load (1.0ms)[0m  [1mSELECT "articles".* FROM "articles" ORDER BY created_at desc LIMIT 10 OFFSET 10[0m
+Rendered articles/index.html.haml within layouts/application (104.0ms)
+Completed 200 OK in 144ms (Views: 141.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/add.png" for 127.0.0.1 at 2012-03-05 22:45:38 -0700
+Served asset /add.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-03-05 22:45:39 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/page_white_magnify.png" for 127.0.0.1 at 2012-03-05 22:45:39 -0700
+Served asset /page_white_magnify.png - 304 Not Modified (2ms)
+
+
+Started GET "/assets/page_delete.png" for 127.0.0.1 at 2012-03-05 22:45:39 -0700
+Served asset /page_delete.png - 304 Not Modified (3ms)
+
+
+Started GET "/assets/pencil.png" for 127.0.0.1 at 2012-03-05 22:45:39 -0700
+Served asset /pencil.png - 304 Not Modified (3ms)
+
+
+Started GET "/articles?page=1" for 127.0.0.1 at 2012-03-05 22:45:40 -0700
+  Processing by ArticlesController#index as HTML
+  Parameters: {"page"=>"1"}
+  [1m[35m (1.0ms)[0m  SELECT COUNT(*) FROM "articles" 
+  [1m[36mArticle Load (1.0ms)[0m  [1mSELECT "articles".* FROM "articles" ORDER BY created_at desc LIMIT 10 OFFSET 0[0m
+Rendered articles/index.html.haml within layouts/application (63.0ms)
+Completed 200 OK in 87ms (Views: 84.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/add.png" for 127.0.0.1 at 2012-03-05 22:45:41 -0700
+Served asset /add.png - 304 Not Modified (4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-03-05 22:45:41 -0700
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/page_white_magnify.png" for 127.0.0.1 at 2012-03-05 22:45:41 -0700
+Served asset /page_white_magnify.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pencil.png" for 127.0.0.1 at 2012-03-05 22:45:41 -0700
+Served asset /pencil.png - 304 Not Modified (10ms)
+
+
+Started GET "/assets/page_delete.png" for 127.0.0.1 at 2012-03-05 22:45:41 -0700
+Served asset /page_delete.png - 304 Not Modified (3ms)
+
+
+Started GET "/articles?page=1" for 127.0.0.1 at 2012-03-05 22:51:32 -0700
+  Processing by ArticlesController#index as HTML
+  Parameters: {"page"=>"1"}
+  [1m[35m (1.0ms)[0m  SELECT COUNT(*) FROM "articles" 
+  [1m[36mArticle Load (1.0ms)[0m  [1mSELECT "articles".* FROM "articles" ORDER BY created_at desc LIMIT 10 OFFSET 0[0m
+Rendered articles/index.html.haml within layouts/application (62.0ms)
+Completed 200 OK in 87ms (Views: 83.0ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-03-05 22:51:32 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/page_white_magnify.png" for 127.0.0.1 at 2012-03-05 22:51:32 -0700
+Served asset /page_white_magnify.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pencil.png" for 127.0.0.1 at 2012-03-05 22:51:32 -0700
+Served asset /pencil.png - 304 Not Modified (3ms)
+
+
+Started GET "/assets/add.png" for 127.0.0.1 at 2012-03-05 22:51:32 -0700
+Served asset /add.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/page_delete.png" for 127.0.0.1 at 2012-03-05 22:51:32 -0700
+Served asset /page_delete.png - 304 Not Modified (0ms)
+
+
+Started GET "/authors" for 127.0.0.1 at 2012-03-05 22:51:35 -0700
+  Processing by AuthorsController#index as HTML
+  [1m[35mAuthor Load (1.0ms)[0m  SELECT "authors".* FROM "authors" 
+Rendered authors/index.html.haml within layouts/application (24.0ms)
+Completed 200 OK in 51ms (Views: 48.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-03-05 22:51:35 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/authors/1" for 127.0.0.1 at 2012-03-05 22:51:37 -0700
+  Processing by AuthorsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAuthor Load (0.0ms)[0m  [1mSELECT "authors".* FROM "authors" WHERE "authors"."id" = ? LIMIT 1[0m  [["id", "1"]]
+Rendered authors/show.html.haml within layouts/application (16.0ms)
+Completed 500 Internal Server Error in 41ms
+
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+    4:   = @author.name
+    5:   %br/
+    6:   %b Articles Wrote:
+    7:   = @Article.name
+    8:   
+    9: = link_to 'Edit', edit_author_path(@author)
+    10: |
+  app/views/authors/show.html.haml:7:in `_app_views_authors_show_html_haml___240105787_32752152'
+  app/controllers/authors_controller.rb:18:in `show'
+
+Rendered c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.0ms)
+Rendered c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+Rendered c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (21.0ms)
+
+
+Started GET "/authors/1" for 127.0.0.1 at 2012-03-05 22:52:18 -0700
+  Processing by AuthorsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mAuthor Load (0.0ms)[0m  SELECT "authors".* FROM "authors" WHERE "authors"."id" = ? LIMIT 1  [["id", "1"]]
+Rendered authors/show.html.haml within layouts/application (42.0ms)
+Completed 500 Internal Server Error in 78ms
+
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+    4:   = @author.name
+    5:   %br/
+    6:   %b Articles Wrote:
+    7:   = @article.name
+    8:   
+    9: = link_to 'Edit', edit_author_path(@author)
+    10: |
+  app/views/authors/show.html.haml:7:in `_app_views_authors_show_html_haml___240105787_34397484'
+  app/controllers/authors_controller.rb:18:in `show'
+
+Rendered c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+Rendered c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+Rendered c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (52.0ms)
+
+
+Started GET "/authors/1" for 127.0.0.1 at 2012-03-05 22:52:20 -0700
+  Processing by AuthorsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAuthor Load (1.0ms)[0m  [1mSELECT "authors".* FROM "authors" WHERE "authors"."id" = ? LIMIT 1[0m  [["id", "1"]]
+Rendered authors/show.html.haml within layouts/application (13.0ms)
+Completed 500 Internal Server Error in 39ms
+
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+    4:   = @author.name
+    5:   %br/
+    6:   %b Articles Wrote:
+    7:   = @article.name
+    8:   
+    9: = link_to 'Edit', edit_author_path(@author)
+    10: |
+  app/views/authors/show.html.haml:7:in `_app_views_authors_show_html_haml___240105787_34397484'
+  app/controllers/authors_controller.rb:18:in `show'
+
+Rendered c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+Rendered c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+Rendered c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (20.0ms)
