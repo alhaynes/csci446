@@ -11156,3 +11156,89 @@ Served asset /page_delete.png - 304 Not Modified (4ms)
 
 Started GET "/assets/pencil.png" for 127.0.0.1 at 2012-03-05 22:40:26 -0700
 Served asset /pencil.png - 304 Not Modified (8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-03-05 22:44:32 -0700
+  Processing by ArticlesController#index as HTML
+  [1m[35m (1.0ms)[0m  SELECT COUNT(*) FROM "articles" 
+  [1m[36mArticle Load (1.0ms)[0m  [1mSELECT "articles".* FROM "articles" ORDER BY created_at desc LIMIT 10 OFFSET 0[0m
+Rendered articles/index.html.haml within layouts/application (73.0ms)
+Completed 200 OK in 103ms (Views: 99.0ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/assets/page_white_magnify.png" for 127.0.0.1 at 2012-03-05 22:44:33 -0700
+Served asset /page_white_magnify.png - 304 Not Modified (4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-03-05 22:44:33 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/page_delete.png" for 127.0.0.1 at 2012-03-05 22:44:33 -0700
+Served asset /page_delete.png - 304 Not Modified (16ms)
+
+
+Started GET "/assets/add.png" for 127.0.0.1 at 2012-03-05 22:44:33 -0700
+Served asset /add.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pencil.png" for 127.0.0.1 at 2012-03-05 22:44:33 -0700
+Served asset /pencil.png - 304 Not Modified (1ms)
+
+
+Started GET "/articles?page=2" for 127.0.0.1 at 2012-03-05 22:44:38 -0700
+  Processing by ArticlesController#index as HTML
+  Parameters: {"page"=>"2"}
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "articles" 
+  [1m[36mArticle Load (0.0ms)[0m  [1mSELECT "articles".* FROM "articles" ORDER BY created_at desc LIMIT 10 OFFSET 10[0m
+Rendered articles/index.html.haml within layouts/application (34.0ms)
+Completed 200 OK in 57ms (Views: 54.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-03-05 22:44:38 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/page_white_magnify.png" for 127.0.0.1 at 2012-03-05 22:44:38 -0700
+Served asset /page_white_magnify.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/page_delete.png" for 127.0.0.1 at 2012-03-05 22:44:38 -0700
+Served asset /page_delete.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/pencil.png" for 127.0.0.1 at 2012-03-05 22:44:38 -0700
+Served asset /pencil.png - 304 Not Modified (2ms)
+
+
+Started GET "/assets/add.png" for 127.0.0.1 at 2012-03-05 22:44:38 -0700
+Served asset /add.png - 304 Not Modified (2ms)
+
+
+Started GET "/articles?page=1" for 127.0.0.1 at 2012-03-05 22:44:39 -0700
+  Processing by ArticlesController#index as HTML
+  Parameters: {"page"=>"1"}
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "articles" 
+  [1m[36mArticle Load (1.0ms)[0m  [1mSELECT "articles".* FROM "articles" ORDER BY created_at desc LIMIT 10 OFFSET 0[0m
+Rendered articles/index.html.haml within layouts/application (126.0ms)
+Completed 200 OK in 152ms (Views: 151.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-03-05 22:44:39 -0700
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/page_white_magnify.png" for 127.0.0.1 at 2012-03-05 22:44:39 -0700
+Served asset /page_white_magnify.png - 304 Not Modified (10ms)
+
+
+Started GET "/assets/pencil.png" for 127.0.0.1 at 2012-03-05 22:44:39 -0700
+Served asset /pencil.png - 304 Not Modified (4ms)
+
+
+Started GET "/assets/add.png" for 127.0.0.1 at 2012-03-05 22:44:39 -0700
+Served asset /add.png - 304 Not Modified (2ms)
+
+
+Started GET "/assets/page_delete.png" for 127.0.0.1 at 2012-03-05 22:44:39 -0700
+Served asset /page_delete.png - 304 Not Modified (3ms)

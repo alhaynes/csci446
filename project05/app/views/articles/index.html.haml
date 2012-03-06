@@ -6,6 +6,8 @@
     = link_to image_tag('add.png'), new_article_path, :title => "click here to create an article!"
     = link_to 'Create an Article', new_article_path, :title => 'create a new article'
 %br/
+%p= will_paginate @articles
+%br/
 %table#article
   %thead
     %tr
@@ -30,4 +32,6 @@
       %td{:colspan => "6"}
         %p= pluralize(@articles.size, 'article')
 
+%br/
+%p= will_paginate @articles
 %br/
