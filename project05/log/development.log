@@ -12141,3 +12141,179 @@ Served asset /pencil.png - 304 Not Modified (1ms)
 
 Started GET "/assets/page_delete.png" for 127.0.0.1 at 2012-03-05 23:30:45 -0700
 Served asset /page_delete.png - 304 Not Modified (2ms)
+
+
+Started GET "/authors" for 127.0.0.1 at 2012-03-05 23:38:03 -0700
+  Processing by AuthorsController#index as HTML
+  [1m[36mAuthor Load (1.0ms)[0m  [1mSELECT "authors".* FROM "authors" [0m
+Rendered authors/index.html.haml within layouts/application (26.0ms)
+Completed 200 OK in 53ms (Views: 48.0ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-03-05 23:38:03 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/authors/1" for 127.0.0.1 at 2012-03-05 23:38:05 -0700
+  Processing by AuthorsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mAuthor Load (1.0ms)[0m  SELECT "authors".* FROM "authors" WHERE "authors"."id" = ? LIMIT 1  [["id", "1"]]
+Rendered authors/show.html.haml within layouts/application (18.0ms)
+Completed 200 OK in 51ms (Views: 45.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-03-05 23:38:05 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2012-03-05 23:45:47 -0700
+  Processing by ArticlesController#index as HTML
+  [1m[36m (1.0ms)[0m  [1mSELECT COUNT(*) FROM "articles" [0m
+  [1m[35mArticle Load (1.0ms)[0m  SELECT "articles".* FROM "articles" ORDER BY created_at desc LIMIT 10 OFFSET 0
+  [1m[36mAuthor Load (1.0ms)[0m  [1mSELECT "authors".* FROM "authors" WHERE "authors"."id" = 4 LIMIT 1[0m
+  [1m[35mAuthor Load (1.0ms)[0m  SELECT "authors".* FROM "authors" WHERE "authors"."id" = 1 LIMIT 1
+  [1m[36mAuthor Load (1.0ms)[0m  [1mSELECT "authors".* FROM "authors" WHERE "authors"."id" = 5 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "authors".* FROM "authors" WHERE "authors"."id" = 5 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "authors".* FROM "authors" WHERE "authors"."id" = 5 LIMIT 1[0m
+  [1m[35mAuthor Load (0.0ms)[0m  SELECT "authors".* FROM "authors" WHERE "authors"."id" = 3 LIMIT 1
+  [1m[36mAuthor Load (0.0ms)[0m  [1mSELECT "authors".* FROM "authors" WHERE "authors"."id" = 2 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "authors".* FROM "authors" WHERE "authors"."id" = 4 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "authors".* FROM "authors" WHERE "authors"."id" = 4 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "authors".* FROM "authors" WHERE "authors"."id" = 3 LIMIT 1
+Rendered articles/index.html.haml within layouts/application (168.0ms)
+Compiled application.sass  (44ms)  (pid 6464)
+Completed 200 OK in 296ms (Views: 288.0ms | ActiveRecord: 7.0ms)
+
+
+Started GET "/assets/application.sass?body=1" for 127.0.0.1 at 2012-03-05 23:45:48 -0700
+Served asset /application.sass - 200 OK (0ms)
+
+
+Started GET "/assets/add.png" for 127.0.0.1 at 2012-03-05 23:45:48 -0700
+Served asset /add.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/pencil.png" for 127.0.0.1 at 2012-03-05 23:45:48 -0700
+Served asset /pencil.png - 304 Not Modified (2ms)
+
+
+Started GET "/assets/page_delete.png" for 127.0.0.1 at 2012-03-05 23:45:48 -0700
+Served asset /page_delete.png - 304 Not Modified (2ms)
+
+
+Started GET "/assets/page_white_magnify.png" for 127.0.0.1 at 2012-03-05 23:45:48 -0700
+Served asset /page_white_magnify.png - 304 Not Modified (0ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2012-03-05 23:45:49 -0700
+  Processing by ArticlesController#index as HTML
+  [1m[36m (1.0ms)[0m  [1mSELECT COUNT(*) FROM "articles" [0m
+  [1m[35mArticle Load (1.0ms)[0m  SELECT "articles".* FROM "articles" ORDER BY created_at desc LIMIT 10 OFFSET 0
+  [1m[36mAuthor Load (0.0ms)[0m  [1mSELECT "authors".* FROM "authors" WHERE "authors"."id" = 4 LIMIT 1[0m
+  [1m[35mAuthor Load (1.0ms)[0m  SELECT "authors".* FROM "authors" WHERE "authors"."id" = 1 LIMIT 1
+  [1m[36mAuthor Load (1.0ms)[0m  [1mSELECT "authors".* FROM "authors" WHERE "authors"."id" = 5 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "authors".* FROM "authors" WHERE "authors"."id" = 5 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "authors".* FROM "authors" WHERE "authors"."id" = 5 LIMIT 1[0m
+  [1m[35mAuthor Load (1.0ms)[0m  SELECT "authors".* FROM "authors" WHERE "authors"."id" = 3 LIMIT 1
+  [1m[36mAuthor Load (1.0ms)[0m  [1mSELECT "authors".* FROM "authors" WHERE "authors"."id" = 2 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "authors".* FROM "authors" WHERE "authors"."id" = 4 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "authors".* FROM "authors" WHERE "authors"."id" = 4 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "authors".* FROM "authors" WHERE "authors"."id" = 3 LIMIT 1
+Rendered articles/index.html.haml within layouts/application (166.0ms)
+Completed 200 OK in 192ms (Views: 182.0ms | ActiveRecord: 9.0ms)
+
+
+Started GET "/assets/page_white_magnify.png" for 127.0.0.1 at 2012-03-05 23:45:49 -0700
+Served asset /page_white_magnify.png - 304 Not Modified (10ms)
+
+
+Started GET "/assets/application.sass?body=1" for 127.0.0.1 at 2012-03-05 23:45:49 -0700
+Served asset /application.sass - 304 Not Modified (1ms)
+
+
+Started GET "/assets/pencil.png" for 127.0.0.1 at 2012-03-05 23:45:49 -0700
+Served asset /pencil.png - 304 Not Modified (4ms)
+
+
+Started GET "/assets/add.png" for 127.0.0.1 at 2012-03-05 23:45:49 -0700
+Served asset /add.png - 304 Not Modified (17ms)
+
+
+Started GET "/assets/page_delete.png" for 127.0.0.1 at 2012-03-05 23:45:50 -0700
+Served asset /page_delete.png - 304 Not Modified (3ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2012-03-05 23:45:51 -0700
+  Processing by ArticlesController#index as HTML
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "articles" [0m
+  [1m[35mArticle Load (1.0ms)[0m  SELECT "articles".* FROM "articles" ORDER BY created_at desc LIMIT 10 OFFSET 0
+  [1m[36mAuthor Load (1.0ms)[0m  [1mSELECT "authors".* FROM "authors" WHERE "authors"."id" = 4 LIMIT 1[0m
+  [1m[35mAuthor Load (1.0ms)[0m  SELECT "authors".* FROM "authors" WHERE "authors"."id" = 1 LIMIT 1
+  [1m[36mAuthor Load (1.0ms)[0m  [1mSELECT "authors".* FROM "authors" WHERE "authors"."id" = 5 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "authors".* FROM "authors" WHERE "authors"."id" = 5 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "authors".* FROM "authors" WHERE "authors"."id" = 5 LIMIT 1[0m
+  [1m[35mAuthor Load (0.0ms)[0m  SELECT "authors".* FROM "authors" WHERE "authors"."id" = 3 LIMIT 1
+  [1m[36mAuthor Load (1.0ms)[0m  [1mSELECT "authors".* FROM "authors" WHERE "authors"."id" = 2 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "authors".* FROM "authors" WHERE "authors"."id" = 4 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "authors".* FROM "authors" WHERE "authors"."id" = 4 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "authors".* FROM "authors" WHERE "authors"."id" = 3 LIMIT 1
+Rendered articles/index.html.haml within layouts/application (161.0ms)
+Completed 200 OK in 187ms (Views: 179.0ms | ActiveRecord: 7.0ms)
+
+
+Started GET "/assets/page_white_magnify.png" for 127.0.0.1 at 2012-03-05 23:45:51 -0700
+Served asset /page_white_magnify.png - 304 Not Modified (6ms)
+
+
+Started GET "/assets/add.png" for 127.0.0.1 at 2012-03-05 23:45:51 -0700
+Served asset /add.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.sass?body=1" for 127.0.0.1 at 2012-03-05 23:45:51 -0700
+Served asset /application.sass - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pencil.png" for 127.0.0.1 at 2012-03-05 23:45:51 -0700
+Served asset /pencil.png - 304 Not Modified (2ms)
+
+
+Started GET "/assets/page_delete.png" for 127.0.0.1 at 2012-03-05 23:45:51 -0700
+Served asset /page_delete.png - 304 Not Modified (0ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2012-03-05 23:46:10 -0700
+  Processing by ArticlesController#index as HTML
+  [1m[36m (1.0ms)[0m  [1mSELECT COUNT(*) FROM "articles" [0m
+  [1m[35mArticle Load (1.0ms)[0m  SELECT "articles".* FROM "articles" ORDER BY created_at desc LIMIT 10 OFFSET 0
+  [1m[36mAuthor Load (0.0ms)[0m  [1mSELECT "authors".* FROM "authors" WHERE "authors"."id" = 4 LIMIT 1[0m
+  [1m[35mAuthor Load (1.0ms)[0m  SELECT "authors".* FROM "authors" WHERE "authors"."id" = 1 LIMIT 1
+  [1m[36mAuthor Load (1.0ms)[0m  [1mSELECT "authors".* FROM "authors" WHERE "authors"."id" = 5 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "authors".* FROM "authors" WHERE "authors"."id" = 5 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "authors".* FROM "authors" WHERE "authors"."id" = 5 LIMIT 1[0m
+  [1m[35mAuthor Load (1.0ms)[0m  SELECT "authors".* FROM "authors" WHERE "authors"."id" = 3 LIMIT 1
+  [1m[36mAuthor Load (1.0ms)[0m  [1mSELECT "authors".* FROM "authors" WHERE "authors"."id" = 2 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "authors".* FROM "authors" WHERE "authors"."id" = 4 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "authors".* FROM "authors" WHERE "authors"."id" = 4 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "authors".* FROM "authors" WHERE "authors"."id" = 3 LIMIT 1
+Rendered articles/index.html.haml within layouts/application (169.0ms)
+Completed 200 OK in 195ms (Views: 187.0ms | ActiveRecord: 7.0ms)
+
+
+Started GET "/assets/application.sass?body=1" for 127.0.0.1 at 2012-03-05 23:46:10 -0700
+Served asset /application.sass - 304 Not Modified (0ms)
+
+
+Started GET "/assets/page_white_magnify.png" for 127.0.0.1 at 2012-03-05 23:46:10 -0700
+Served asset /page_white_magnify.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/pencil.png" for 127.0.0.1 at 2012-03-05 23:46:10 -0700
+Served asset /pencil.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/add.png" for 127.0.0.1 at 2012-03-05 23:46:10 -0700
+Served asset /add.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/page_delete.png" for 127.0.0.1 at 2012-03-05 23:46:10 -0700
+Served asset /page_delete.png - 304 Not Modified (2ms)
