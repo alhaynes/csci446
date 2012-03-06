@@ -8750,3 +8750,2061 @@ Served asset /pencil.png - 304 Not Modified (3ms)
 
 Started GET "/assets/page_delete.png" for 127.0.0.1 at 2012-03-04 15:34:09 -0700
 Served asset /page_delete.png - 304 Not Modified (2ms)
+  [1m[36m (0.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateArticles (20120213054040)
+Migrating to CreateAuthors (20120305235709)
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (3.0ms)[0m  [1mCREATE TABLE "authors" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20120305235709')
+  [1m[36m (0.0ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("articles")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("authors")
+
+
+Started GET "/" for 127.0.0.1 at 2012-03-05 16:58:09 -0700
+  Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (1.0ms)[0m  [1mSELECT "articles".* FROM "articles" [0m
+Rendered articles/index.html.haml within layouts/application (315.0ms)
+Completed 200 OK in 602ms (Views: 598.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-03-05 16:58:19 -0700
+Served asset /application.css - 200 OK (0ms)
+
+
+Started GET "/assets/add.png" for 127.0.0.1 at 2012-03-05 16:58:19 -0700
+Served asset /add.png - 200 OK (12ms)
+
+
+Started GET "/assets/page_white_magnify.png" for 127.0.0.1 at 2012-03-05 16:58:19 -0700
+Served asset /page_white_magnify.png - 200 OK (10ms)
+
+
+Started GET "/assets/pencil.png" for 127.0.0.1 at 2012-03-05 16:58:19 -0700
+Served asset /pencil.png - 200 OK (11ms)
+
+
+Started GET "/assets/page_delete.png" for 127.0.0.1 at 2012-03-05 16:58:19 -0700
+Served asset /page_delete.png - 200 OK (11ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-03-05 16:59:05 -0700
+  Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (1.0ms)[0m  SELECT "articles".* FROM "articles" 
+Rendered articles/index.html.haml within layouts/application (60.0ms)
+Completed 200 OK in 91ms (Views: 87.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-03-05 16:59:05 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/add.png" for 127.0.0.1 at 2012-03-05 16:59:05 -0700
+Served asset /add.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/page_delete.png" for 127.0.0.1 at 2012-03-05 16:59:05 -0700
+Served asset /page_delete.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/page_white_magnify.png" for 127.0.0.1 at 2012-03-05 16:59:05 -0700
+Served asset /page_white_magnify.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pencil.png" for 127.0.0.1 at 2012-03-05 16:59:05 -0700
+Served asset /pencil.png - 304 Not Modified (0ms)
+
+
+Started GET "/authors" for 127.0.0.1 at 2012-03-05 16:59:06 -0700
+  Processing by AuthorsController#index as HTML
+  [1m[36mAuthor Load (0.0ms)[0m  [1mSELECT "authors".* FROM "authors" [0m
+Rendered authors/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 28ms (Views: 25.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-03-05 16:59:06 -0700
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2012-03-05 17:00:09 -0700
+  Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (1.0ms)[0m  SELECT "articles".* FROM "articles" 
+Rendered articles/index.html.haml within layouts/application (91.0ms)
+Completed 200 OK in 118ms (Views: 115.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/add.png" for 127.0.0.1 at 2012-03-05 17:00:10 -0700
+Served asset /add.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-03-05 17:00:10 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/page_white_magnify.png" for 127.0.0.1 at 2012-03-05 17:00:10 -0700
+Served asset /page_white_magnify.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/pencil.png" for 127.0.0.1 at 2012-03-05 17:00:10 -0700
+Served asset /pencil.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/page_delete.png" for 127.0.0.1 at 2012-03-05 17:00:10 -0700
+Served asset /page_delete.png - 304 Not Modified (1ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2012-03-05 17:12:00 -0700
+  Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (1.0ms)[0m  [1mSELECT "articles".* FROM "articles" [0m
+Rendered articles/index.html.haml within layouts/application (63.0ms)
+Completed 200 OK in 122ms (Views: 86.0ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/assets/add.png" for 127.0.0.1 at 2012-03-05 17:12:00 -0700
+Served asset /add.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-03-05 17:12:00 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/page_white_magnify.png" for 127.0.0.1 at 2012-03-05 17:12:00 -0700
+Served asset /page_white_magnify.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/page_delete.png" for 127.0.0.1 at 2012-03-05 17:12:00 -0700
+Served asset /page_delete.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pencil.png" for 127.0.0.1 at 2012-03-05 17:12:00 -0700
+Served asset /pencil.png - 304 Not Modified (1ms)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2012-03-05 17:12:02 -0700
+  Processing by ArticlesController#new as HTML
+ERROR: compiling _app_views_articles__form_html_haml___947298055_29825460 RAISED c:/Users/Alyse/Documents/cs446/src/project05/app/views/articles/_form.html.haml:17: syntax error, unexpected tASSOC
+...t| [t.name, t.id]}, {prompt: => "Please select an author for...
+...                               ^
+c:/Users/Alyse/Documents/cs446/src/project05/app/views/articles/_form.html.haml:17: syntax error, unexpected '}', expecting ')'
+c:/Users/Alyse/Documents/cs446/src/project05/app/views/articles/_form.html.haml:22: unknown regexp options - dv
+c:/Users/Alyse/Documents/cs446/src/project05/app/views/articles/_form.html.haml:22: syntax error, unexpected $undefined
+));}\n</div>\n<div class='actions'>\n  #{
+             ^
+c:/Users/Alyse/Documents/cs446/src/project05/app/views/articles/_form.html.haml:22: syntax error, unexpected keyword_class, expecting keyword_do or '{' or '('
+));}\n</div>\n<div class='actions'>\n  #{
+                        ^
+c:/Users/Alyse/Documents/cs446/src/project05/app/views/articles/_form.html.haml:22: syntax error, unexpected $undefined
+));}\n</div>\n<div class='actions'>\n  #{
+                                    ^
+c:/Users/Alyse/Documents/cs446/src/project05/app/views/articles/_form.html.haml:24: syntax error, unexpected '}', expecting ')'
+));}\n</div>\n", -1, false);end
+    ^
+c:/Users/Alyse/Documents/cs446/src/project05/app/views/articles/_form.html.haml:24: unterminated regexp meets end of file
+c:/Users/Alyse/Documents/cs446/src/project05/app/views/articles/_form.html.haml:24: syntax error, unexpected $end, expecting ')'
+Function body:           def _app_views_articles__form_html_haml___947298055_29825460(local_assigns, output_buffer)
+            _old_virtual_path, @virtual_path = @virtual_path, "articles/_form";_old_output_buffer = @output_buffer;form = local_assigns[:form];;begin;extend Haml::Helpers;_hamlout = @haml_buffer = Haml::Buffer.new(@haml_buffer, {:autoclose=>["meta", "img", "link", "br", "hr", "input", "area", "param", "col", "base"], :preserve=>["textarea", "pre", "code"], :attr_wrapper=>"'", :ugly=>false, :format=>:html5, :encoding=>"UTF-8", :escape_html=>true, :escape_attrs=>true});_erbout = _hamlout.buffer;__in_erb_template = true;;haml_temp =  form_for(@article) do |f|
+ if @article.errors.any?
+_hamlout.push_text("<div id='error_explanation'>\n  <h2>\n    #{_hamlout.adjust_tabs(2); 
+
+_hamlout.format_script_false_false_false_true_false_true_false(( pluralize(@article.errors.count, "error")
+));}\n    prohibited this article from being saved:\n  </h2>\n  <ul>\n", 0, false);
+
+ @article.errors.full_messages.each do |msg|
+_hamlout.push_text("    <li>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_true_false_true_false((msg
+));}</li>\n", 0, false);end
+_hamlout.push_text("  </ul>\n</div>\n", -2, false);end
+_hamlout.push_text("<div class='field'>\n  #{_hamlout.adjust_tabs(1); _hamlout.format_script_false_false_false_true_false_true_false(( f.label :title
+));}\n  <br>\n  #{_hamlout.format_script_false_false_false_true_false_true_false(( f.text_field :title
+));}\n</div>\n<div class='field'>\n  #{
+_hamlout.format_script_false_false_false_true_false_true_false(( f.label :author
+));}\n  <br>\n  #{
+_hamlout.format_script_false_false_false_true_false_true_false(( f.select :author_id, Author.all.collect {|t| [t.name, t.id]}, {prompt: => "Please select an author for your article"}
+));}\n</div>\n<div class='field'>\n  #{
+_hamlout.format_script_false_false_false_true_false_true_false(( f.label :body
+));}\n  <br>\n  #{
+_hamlout.format_script_false_false_false_true_false_true_false(( f.text_area :body
+));}\n</div>\n<div class='actions'>\n  #{
+_hamlout.format_script_false_false_false_true_false_true_false(( f.submit
+));}\n</div>\n", -1, false);end
+_hamlout.buffer << _hamlout.format_script_false_false_false_true_false_false_false(haml_temp);_hamlout.push_text("\n", 0, false);::Haml::Util.html_safe(_erbout);ensure;@haml_buffer = @haml_buffer.upper if @haml_buffer;end;
+          ensure
+            @virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+Backtrace: c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_view/template.rb:309:in `module_eval'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_view/template.rb:309:in `compile'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_view/template.rb:217:in `compile!'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_view/template.rb:170:in `block in render'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/activesupport-3.1.3/lib/active_support/notifications.rb:55:in `instrument'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_view/template.rb:169:in `render'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_view/renderer/partial_renderer.rb:256:in `render_partial'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_view/renderer/partial_renderer.rb:228:in `block (2 levels) in render'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_view/renderer/abstract_renderer.rb:33:in `block in instrument'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/activesupport-3.1.3/lib/active_support/notifications.rb:53:in `block in instrument'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/activesupport-3.1.3/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/activesupport-3.1.3/lib/active_support/notifications.rb:53:in `instrument'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_view/renderer/abstract_renderer.rb:33:in `instrument'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_view/renderer/partial_renderer.rb:227:in `block in render'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_view/renderer/abstract_renderer.rb:22:in `wrap_formats'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_view/renderer/partial_renderer.rb:219:in `render'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_view/renderer/renderer.rb:41:in `render_partial'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_view/helpers/rendering_helper.rb:27:in `render'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/haml-3.1.4/lib/haml/helpers/action_view_mods.rb:11:in `block in render_with_haml'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/haml-3.1.4/lib/haml/helpers.rb:90:in `non_haml'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/haml-3.1.4/lib/haml/helpers/action_view_mods.rb:11:in `render_with_haml'
+c:/Users/Alyse/Documents/cs446/src/project05/app/views/articles/new.html.haml:2:in `_app_views_articles_new_html_haml__567051284_35317428'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_view/template.rb:171:in `block in render'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/activesupport-3.1.3/lib/active_support/notifications.rb:55:in `instrument'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_view/template.rb:169:in `render'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_view/renderer/template_renderer.rb:40:in `block (2 levels) in render_template'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_view/renderer/abstract_renderer.rb:33:in `block in instrument'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/activesupport-3.1.3/lib/active_support/notifications.rb:53:in `block in instrument'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/activesupport-3.1.3/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/activesupport-3.1.3/lib/active_support/notifications.rb:53:in `instrument'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_view/renderer/abstract_renderer.rb:33:in `instrument'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_view/renderer/template_renderer.rb:39:in `block in render_template'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_view/renderer/template_renderer.rb:47:in `render_with_layout'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_view/renderer/template_renderer.rb:38:in `render_template'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_view/renderer/template_renderer.rb:12:in `block in render'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_view/renderer/abstract_renderer.rb:22:in `wrap_formats'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_view/renderer/template_renderer.rb:9:in `render'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_view/renderer/renderer.rb:36:in `render_template'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_view/renderer/renderer.rb:17:in `render'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/abstract_controller/rendering.rb:120:in `_render_template'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_controller/metal/streaming.rb:250:in `_render_template'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/abstract_controller/rendering.rb:114:in `render_to_body'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_controller/metal/renderers.rb:30:in `render_to_body'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_controller/metal/compatibility.rb:43:in `render_to_body'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/abstract_controller/rendering.rb:99:in `render'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_controller/metal/rendering.rb:16:in `render'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/activesupport-3.1.3/lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+c:/Ruby193/lib/ruby/1.9.1/benchmark.rb:295:in `realtime'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/activesupport-3.1.3/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_controller/metal/instrumentation.rb:78:in `cleanup_view_runtime'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/activerecord-3.1.3/lib/active_record/railties/controller_runtime.rb:24:in `cleanup_view_runtime'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_controller/metal/instrumentation.rb:39:in `render'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_controller/metal/mime_responds.rb:268:in `block in retrieve_response_from_mimes'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_controller/metal/mime_responds.rb:195:in `call'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_controller/metal/mime_responds.rb:195:in `respond_to'
+c:/Users/Alyse/Documents/cs446/src/project05/app/controllers/articles_controller.rb:30:in `new'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/abstract_controller/base.rb:167:in `process_action'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_controller/metal/rendering.rb:10:in `process_action'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/activesupport-3.1.3/lib/active_support/callbacks.rb:416:in `_run__537464324__process_action__41282740__callbacks'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/activesupport-3.1.3/lib/active_support/callbacks.rb:386:in `_run_process_action_callbacks'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/activesupport-3.1.3/lib/active_support/callbacks.rb:81:in `run_callbacks'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/abstract_controller/callbacks.rb:17:in `process_action'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_controller/metal/rescue.rb:17:in `process_action'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/activesupport-3.1.3/lib/active_support/notifications.rb:53:in `block in instrument'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/activesupport-3.1.3/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/activesupport-3.1.3/lib/active_support/notifications.rb:53:in `instrument'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_controller/metal/params_wrapper.rb:201:in `process_action'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/activerecord-3.1.3/lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/abstract_controller/base.rb:121:in `process'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/abstract_controller/rendering.rb:45:in `process'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_controller/metal.rb:193:in `dispatch'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_controller/metal.rb:236:in `block in action'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/routing/route_set.rb:65:in `call'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/routing/route_set.rb:65:in `dispatch'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/routing/route_set.rb:29:in `call'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/rack-mount-0.8.3/lib/rack/mount/route_set.rb:152:in `block in call'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/rack-mount-0.8.3/lib/rack/mount/code_generation.rb:96:in `block in recognize'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/rack-mount-0.8.3/lib/rack/mount/code_generation.rb:82:in `optimized_each'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/rack-mount-0.8.3/lib/rack/mount/code_generation.rb:95:in `recognize'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/rack-mount-0.8.3/lib/rack/mount/route_set.rb:141:in `call'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/routing/route_set.rb:532:in `call'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/rack-1.3.6/lib/rack/etag.rb:23:in `call'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/rack-1.3.6/lib/rack/conditionalget.rb:25:in `call'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/head.rb:14:in `call'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/flash.rb:247:in `call'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/rack-1.3.6/lib/rack/session/abstract/id.rb:195:in `context'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/rack-1.3.6/lib/rack/session/abstract/id.rb:190:in `call'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/cookies.rb:331:in `call'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/activerecord-3.1.3/lib/active_record/query_cache.rb:64:in `call'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/activerecord-3.1.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:477:in `call'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/activesupport-3.1.3/lib/active_support/callbacks.rb:392:in `_run_call_callbacks'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/activesupport-3.1.3/lib/active_support/callbacks.rb:81:in `run_callbacks'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/callbacks.rb:28:in `call'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/reloader.rb:68:in `call'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/rack-1.3.6/lib/rack/sendfile.rb:101:in `call'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/remote_ip.rb:48:in `call'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/show_exceptions.rb:47:in `call'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/railties-3.1.3/lib/rails/rack/logger.rb:13:in `call'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/rack-1.3.6/lib/rack/methodoverride.rb:24:in `call'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/rack-1.3.6/lib/rack/runtime.rb:17:in `call'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/activesupport-3.1.3/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/rack-1.3.6/lib/rack/lock.rb:15:in `call'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/static.rb:53:in `call'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/railties-3.1.3/lib/rails/engine.rb:456:in `call'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/rack-1.3.6/lib/rack/content_length.rb:14:in `call'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/railties-3.1.3/lib/rails/rack/log_tailer.rb:14:in `call'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/rack-1.3.6/lib/rack/handler/webrick.rb:59:in `service'
+c:/Ruby193/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+c:/Ruby193/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+c:/Ruby193/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+Rendered articles/_form.html.haml (30.0ms)
+Rendered articles/new.html.haml within layouts/application (164.0ms)
+Completed 500 Internal Server Error in 190ms
+
+ActionView::Template::Error (c:/Users/Alyse/Documents/cs446/src/project05/app/views/articles/_form.html.haml:17: syntax error, unexpected tASSOC
+...t| [t.name, t.id]}, {prompt: => "Please select an author for...
+...                               ^
+c:/Users/Alyse/Documents/cs446/src/project05/app/views/articles/_form.html.haml:17: syntax error, unexpected '}', expecting ')'
+c:/Users/Alyse/Documents/cs446/src/project05/app/views/articles/_form.html.haml:22: unknown regexp options - dv
+c:/Users/Alyse/Documents/cs446/src/project05/app/views/articles/_form.html.haml:22: syntax error, unexpected $undefined
+));}\n</div>\n<div class='actions'>\n  #{
+             ^
+c:/Users/Alyse/Documents/cs446/src/project05/app/views/articles/_form.html.haml:22: syntax error, unexpected keyword_class, expecting keyword_do or '{' or '('
+));}\n</div>\n<div class='actions'>\n  #{
+                        ^
+c:/Users/Alyse/Documents/cs446/src/project05/app/views/articles/_form.html.haml:22: syntax error, unexpected $undefined
+));}\n</div>\n<div class='actions'>\n  #{
+                                    ^
+c:/Users/Alyse/Documents/cs446/src/project05/app/views/articles/_form.html.haml:24: syntax error, unexpected '}', expecting ')'
+));}\n</div>\n", -1, false);end
+    ^
+c:/Users/Alyse/Documents/cs446/src/project05/app/views/articles/_form.html.haml:24: unterminated regexp meets end of file
+c:/Users/Alyse/Documents/cs446/src/project05/app/views/articles/_form.html.haml:24: syntax error, unexpected $end, expecting ')'):
+    14:   .field
+    15:     = f.label :author
+    16:     %br/
+    17:     = f.select :author_id, Author.all.collect {|t| [t.name, t.id]}, {prompt: => "Please select an author for your article"}
+    18:   .field
+    19:     = f.label :body
+    20:     %br/
+  app/views/articles/new.html.haml:2:in `_app_views_articles_new_html_haml__567051284_35317428'
+  app/controllers/articles_controller.rb:30:in `new'
+
+Rendered c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+Rendered c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+Rendered c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (52.0ms)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2012-03-05 17:13:16 -0700
+  Processing by ArticlesController#new as HTML
+ERROR: compiling _app_views_articles__form_html_haml___947298055_34735488 RAISED c:/Users/Alyse/Documents/cs446/src/project05/app/views/articles/_form.html.haml:17: syntax error, unexpected tASSOC
+...t| [t.name, t.id]}, {prompt: => 'Please select an author for...
+...                               ^
+c:/Users/Alyse/Documents/cs446/src/project05/app/views/articles/_form.html.haml:17: syntax error, unexpected '}', expecting ')'
+c:/Users/Alyse/Documents/cs446/src/project05/app/views/articles/_form.html.haml:22: unknown regexp options - dv
+c:/Users/Alyse/Documents/cs446/src/project05/app/views/articles/_form.html.haml:22: syntax error, unexpected $undefined
+));}\n</div>\n<div class='actions'>\n  #{
+             ^
+c:/Users/Alyse/Documents/cs446/src/project05/app/views/articles/_form.html.haml:22: syntax error, unexpected keyword_class, expecting keyword_do or '{' or '('
+));}\n</div>\n<div class='actions'>\n  #{
+                        ^
+c:/Users/Alyse/Documents/cs446/src/project05/app/views/articles/_form.html.haml:22: syntax error, unexpected $undefined
+));}\n</div>\n<div class='actions'>\n  #{
+                                    ^
+c:/Users/Alyse/Documents/cs446/src/project05/app/views/articles/_form.html.haml:24: syntax error, unexpected '}', expecting ')'
+));}\n</div>\n", -1, false);end
+    ^
+c:/Users/Alyse/Documents/cs446/src/project05/app/views/articles/_form.html.haml:24: unterminated regexp meets end of file
+c:/Users/Alyse/Documents/cs446/src/project05/app/views/articles/_form.html.haml:24: syntax error, unexpected $end, expecting ')'
+Function body:           def _app_views_articles__form_html_haml___947298055_34735488(local_assigns, output_buffer)
+            _old_virtual_path, @virtual_path = @virtual_path, "articles/_form";_old_output_buffer = @output_buffer;form = local_assigns[:form];;begin;extend Haml::Helpers;_hamlout = @haml_buffer = Haml::Buffer.new(@haml_buffer, {:autoclose=>["meta", "img", "link", "br", "hr", "input", "area", "param", "col", "base"], :preserve=>["textarea", "pre", "code"], :attr_wrapper=>"'", :ugly=>false, :format=>:html5, :encoding=>"UTF-8", :escape_html=>true, :escape_attrs=>true});_erbout = _hamlout.buffer;__in_erb_template = true;;haml_temp =  form_for(@article) do |f|
+ if @article.errors.any?
+_hamlout.push_text("<div id='error_explanation'>\n  <h2>\n    #{_hamlout.adjust_tabs(2); 
+
+_hamlout.format_script_false_false_false_true_false_true_false(( pluralize(@article.errors.count, "error")
+));}\n    prohibited this article from being saved:\n  </h2>\n  <ul>\n", 0, false);
+
+ @article.errors.full_messages.each do |msg|
+_hamlout.push_text("    <li>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_true_false_true_false((msg
+));}</li>\n", 0, false);end
+_hamlout.push_text("  </ul>\n</div>\n", -2, false);end
+_hamlout.push_text("<div class='field'>\n  #{_hamlout.adjust_tabs(1); _hamlout.format_script_false_false_false_true_false_true_false(( f.label :title
+));}\n  <br>\n  #{_hamlout.format_script_false_false_false_true_false_true_false(( f.text_field :title
+));}\n</div>\n<div class='field'>\n  #{
+_hamlout.format_script_false_false_false_true_false_true_false(( f.label :author
+));}\n  <br>\n  #{
+_hamlout.format_script_false_false_false_true_false_true_false(( f.select :author_id, Author.all.collect {|t| [t.name, t.id]}, {prompt: => 'Please select an author for your article'}
+));}\n</div>\n<div class='field'>\n  #{
+_hamlout.format_script_false_false_false_true_false_true_false(( f.label :body
+));}\n  <br>\n  #{
+_hamlout.format_script_false_false_false_true_false_true_false(( f.text_area :body
+));}\n</div>\n<div class='actions'>\n  #{
+_hamlout.format_script_false_false_false_true_false_true_false(( f.submit
+));}\n</div>\n", -1, false);end
+_hamlout.buffer << _hamlout.format_script_false_false_false_true_false_false_false(haml_temp);_hamlout.push_text("\n", 0, false);::Haml::Util.html_safe(_erbout);ensure;@haml_buffer = @haml_buffer.upper if @haml_buffer;end;
+          ensure
+            @virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+Backtrace: c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_view/template.rb:309:in `module_eval'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_view/template.rb:309:in `compile'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_view/template.rb:217:in `compile!'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_view/template.rb:170:in `block in render'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/activesupport-3.1.3/lib/active_support/notifications.rb:55:in `instrument'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_view/template.rb:169:in `render'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_view/renderer/partial_renderer.rb:256:in `render_partial'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_view/renderer/partial_renderer.rb:228:in `block (2 levels) in render'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_view/renderer/abstract_renderer.rb:33:in `block in instrument'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/activesupport-3.1.3/lib/active_support/notifications.rb:53:in `block in instrument'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/activesupport-3.1.3/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/activesupport-3.1.3/lib/active_support/notifications.rb:53:in `instrument'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_view/renderer/abstract_renderer.rb:33:in `instrument'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_view/renderer/partial_renderer.rb:227:in `block in render'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_view/renderer/abstract_renderer.rb:22:in `wrap_formats'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_view/renderer/partial_renderer.rb:219:in `render'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_view/renderer/renderer.rb:41:in `render_partial'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_view/helpers/rendering_helper.rb:27:in `render'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/haml-3.1.4/lib/haml/helpers/action_view_mods.rb:11:in `block in render_with_haml'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/haml-3.1.4/lib/haml/helpers.rb:90:in `non_haml'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/haml-3.1.4/lib/haml/helpers/action_view_mods.rb:11:in `render_with_haml'
+c:/Users/Alyse/Documents/cs446/src/project05/app/views/articles/new.html.haml:2:in `_app_views_articles_new_html_haml__567051284_35317428'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_view/template.rb:171:in `block in render'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/activesupport-3.1.3/lib/active_support/notifications.rb:55:in `instrument'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_view/template.rb:169:in `render'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_view/renderer/template_renderer.rb:40:in `block (2 levels) in render_template'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_view/renderer/abstract_renderer.rb:33:in `block in instrument'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/activesupport-3.1.3/lib/active_support/notifications.rb:53:in `block in instrument'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/activesupport-3.1.3/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/activesupport-3.1.3/lib/active_support/notifications.rb:53:in `instrument'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_view/renderer/abstract_renderer.rb:33:in `instrument'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_view/renderer/template_renderer.rb:39:in `block in render_template'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_view/renderer/template_renderer.rb:47:in `render_with_layout'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_view/renderer/template_renderer.rb:38:in `render_template'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_view/renderer/template_renderer.rb:12:in `block in render'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_view/renderer/abstract_renderer.rb:22:in `wrap_formats'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_view/renderer/template_renderer.rb:9:in `render'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_view/renderer/renderer.rb:36:in `render_template'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_view/renderer/renderer.rb:17:in `render'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/abstract_controller/rendering.rb:120:in `_render_template'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_controller/metal/streaming.rb:250:in `_render_template'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/abstract_controller/rendering.rb:114:in `render_to_body'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_controller/metal/renderers.rb:30:in `render_to_body'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_controller/metal/compatibility.rb:43:in `render_to_body'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/abstract_controller/rendering.rb:99:in `render'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_controller/metal/rendering.rb:16:in `render'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/activesupport-3.1.3/lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+c:/Ruby193/lib/ruby/1.9.1/benchmark.rb:295:in `realtime'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/activesupport-3.1.3/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_controller/metal/instrumentation.rb:78:in `cleanup_view_runtime'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/activerecord-3.1.3/lib/active_record/railties/controller_runtime.rb:24:in `cleanup_view_runtime'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_controller/metal/instrumentation.rb:39:in `render'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_controller/metal/mime_responds.rb:268:in `block in retrieve_response_from_mimes'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_controller/metal/mime_responds.rb:195:in `call'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_controller/metal/mime_responds.rb:195:in `respond_to'
+c:/Users/Alyse/Documents/cs446/src/project05/app/controllers/articles_controller.rb:30:in `new'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/abstract_controller/base.rb:167:in `process_action'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_controller/metal/rendering.rb:10:in `process_action'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/activesupport-3.1.3/lib/active_support/callbacks.rb:416:in `_run__537464324__process_action__41282740__callbacks'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/activesupport-3.1.3/lib/active_support/callbacks.rb:386:in `_run_process_action_callbacks'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/activesupport-3.1.3/lib/active_support/callbacks.rb:81:in `run_callbacks'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/abstract_controller/callbacks.rb:17:in `process_action'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_controller/metal/rescue.rb:17:in `process_action'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/activesupport-3.1.3/lib/active_support/notifications.rb:53:in `block in instrument'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/activesupport-3.1.3/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/activesupport-3.1.3/lib/active_support/notifications.rb:53:in `instrument'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_controller/metal/params_wrapper.rb:201:in `process_action'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/activerecord-3.1.3/lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/abstract_controller/base.rb:121:in `process'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/abstract_controller/rendering.rb:45:in `process'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_controller/metal.rb:193:in `dispatch'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_controller/metal.rb:236:in `block in action'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/routing/route_set.rb:65:in `call'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/routing/route_set.rb:65:in `dispatch'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/routing/route_set.rb:29:in `call'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/rack-mount-0.8.3/lib/rack/mount/route_set.rb:152:in `block in call'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/rack-mount-0.8.3/lib/rack/mount/code_generation.rb:96:in `block in recognize'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/rack-mount-0.8.3/lib/rack/mount/code_generation.rb:82:in `optimized_each'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/rack-mount-0.8.3/lib/rack/mount/code_generation.rb:95:in `recognize'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/rack-mount-0.8.3/lib/rack/mount/route_set.rb:141:in `call'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/routing/route_set.rb:532:in `call'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/rack-1.3.6/lib/rack/etag.rb:23:in `call'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/rack-1.3.6/lib/rack/conditionalget.rb:25:in `call'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/head.rb:14:in `call'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/flash.rb:247:in `call'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/rack-1.3.6/lib/rack/session/abstract/id.rb:195:in `context'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/rack-1.3.6/lib/rack/session/abstract/id.rb:190:in `call'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/cookies.rb:331:in `call'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/activerecord-3.1.3/lib/active_record/query_cache.rb:64:in `call'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/activerecord-3.1.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:477:in `call'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/activesupport-3.1.3/lib/active_support/callbacks.rb:392:in `_run_call_callbacks'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/activesupport-3.1.3/lib/active_support/callbacks.rb:81:in `run_callbacks'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/callbacks.rb:28:in `call'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/reloader.rb:68:in `call'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/rack-1.3.6/lib/rack/sendfile.rb:101:in `call'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/remote_ip.rb:48:in `call'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/show_exceptions.rb:47:in `call'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/railties-3.1.3/lib/rails/rack/logger.rb:13:in `call'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/rack-1.3.6/lib/rack/methodoverride.rb:24:in `call'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/rack-1.3.6/lib/rack/runtime.rb:17:in `call'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/activesupport-3.1.3/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/rack-1.3.6/lib/rack/lock.rb:15:in `call'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/static.rb:53:in `call'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/railties-3.1.3/lib/rails/engine.rb:456:in `call'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/rack-1.3.6/lib/rack/content_length.rb:14:in `call'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/railties-3.1.3/lib/rails/rack/log_tailer.rb:14:in `call'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/rack-1.3.6/lib/rack/handler/webrick.rb:59:in `service'
+c:/Ruby193/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+c:/Ruby193/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+c:/Ruby193/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+Rendered articles/_form.html.haml (7.0ms)
+Rendered articles/new.html.haml within layouts/application (12.0ms)
+Completed 500 Internal Server Error in 34ms
+
+ActionView::Template::Error (c:/Users/Alyse/Documents/cs446/src/project05/app/views/articles/_form.html.haml:17: syntax error, unexpected tASSOC
+...t| [t.name, t.id]}, {prompt: => 'Please select an author for...
+...                               ^
+c:/Users/Alyse/Documents/cs446/src/project05/app/views/articles/_form.html.haml:17: syntax error, unexpected '}', expecting ')'
+c:/Users/Alyse/Documents/cs446/src/project05/app/views/articles/_form.html.haml:22: unknown regexp options - dv
+c:/Users/Alyse/Documents/cs446/src/project05/app/views/articles/_form.html.haml:22: syntax error, unexpected $undefined
+));}\n</div>\n<div class='actions'>\n  #{
+             ^
+c:/Users/Alyse/Documents/cs446/src/project05/app/views/articles/_form.html.haml:22: syntax error, unexpected keyword_class, expecting keyword_do or '{' or '('
+));}\n</div>\n<div class='actions'>\n  #{
+                        ^
+c:/Users/Alyse/Documents/cs446/src/project05/app/views/articles/_form.html.haml:22: syntax error, unexpected $undefined
+));}\n</div>\n<div class='actions'>\n  #{
+                                    ^
+c:/Users/Alyse/Documents/cs446/src/project05/app/views/articles/_form.html.haml:24: syntax error, unexpected '}', expecting ')'
+));}\n</div>\n", -1, false);end
+    ^
+c:/Users/Alyse/Documents/cs446/src/project05/app/views/articles/_form.html.haml:24: unterminated regexp meets end of file
+c:/Users/Alyse/Documents/cs446/src/project05/app/views/articles/_form.html.haml:24: syntax error, unexpected $end, expecting ')'):
+    14:   .field
+    15:     = f.label :author
+    16:     %br/
+    17:     = f.select :author_id, Author.all.collect {|t| [t.name, t.id]}, {prompt: => 'Please select an author for your article'}
+    18:   .field
+    19:     = f.label :body
+    20:     %br/
+  app/views/articles/new.html.haml:2:in `_app_views_articles_new_html_haml__567051284_35317428'
+  app/controllers/articles_controller.rb:30:in `new'
+
+Rendered c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.0ms)
+Rendered c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (34.0ms)
+Rendered c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (49.0ms)
+
+
+Started GET "/authors" for 127.0.0.1 at 2012-03-05 17:13:24 -0700
+  Processing by AuthorsController#index as HTML
+  [1m[35mAuthor Load (0.0ms)[0m  SELECT "authors".* FROM "authors" 
+Rendered authors/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 28ms (Views: 25.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-03-05 17:13:24 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/authors/new" for 127.0.0.1 at 2012-03-05 17:13:26 -0700
+  Processing by AuthorsController#new as HTML
+Rendered authors/_form.html.erb (12.0ms)
+Rendered authors/new.html.erb within layouts/application (19.0ms)
+Completed 200 OK in 41ms (Views: 39.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-03-05 17:13:26 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started POST "/authors" for 127.0.0.1 at 2012-03-05 17:13:33 -0700
+  Processing by AuthorsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ah20zZukxfTKsLluOxV61P9f4omV4YqJ72WFjJmmElQ=", "author"=>{"name"=>"Bark Rezington"}, "commit"=>"Create Author"}
+  [1m[36mSQL (4.0ms)[0m  [1mINSERT INTO "authors" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Tue, 06 Mar 2012 00:13:33 UTC +00:00], ["name", "Bark Rezington"], ["updated_at", Tue, 06 Mar 2012 00:13:33 UTC +00:00]]
+Redirected to http://localhost:3000/authors/1
+Completed 302 Found in 30ms
+
+
+Started GET "/authors/1" for 127.0.0.1 at 2012-03-05 17:13:33 -0700
+  Processing by AuthorsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mAuthor Load (0.0ms)[0m  SELECT "authors".* FROM "authors" WHERE "authors"."id" = ? LIMIT 1  [["id", "1"]]
+Rendered authors/show.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 37ms (Views: 31.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-03-05 17:13:33 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2012-03-05 17:13:35 -0700
+  Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (1.0ms)[0m  [1mSELECT "articles".* FROM "articles" [0m
+Rendered articles/index.html.haml within layouts/application (59.0ms)
+Completed 200 OK in 88ms (Views: 84.0ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-03-05 17:13:35 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/page_delete.png" for 127.0.0.1 at 2012-03-05 17:13:35 -0700
+Served asset /page_delete.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/add.png" for 127.0.0.1 at 2012-03-05 17:13:35 -0700
+Served asset /add.png - 304 Not Modified (2ms)
+
+
+Started GET "/assets/pencil.png" for 127.0.0.1 at 2012-03-05 17:13:35 -0700
+Served asset /pencil.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/page_white_magnify.png" for 127.0.0.1 at 2012-03-05 17:13:35 -0700
+Served asset /page_white_magnify.png - 304 Not Modified (2ms)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2012-03-05 17:13:37 -0700
+  Processing by ArticlesController#new as HTML
+ERROR: compiling _app_views_articles__form_html_haml___947298055_34735488 RAISED c:/Users/Alyse/Documents/cs446/src/project05/app/views/articles/_form.html.haml:17: syntax error, unexpected tASSOC
+...t| [t.name, t.id]}, {prompt: => 'Please select an author for...
+...                               ^
+c:/Users/Alyse/Documents/cs446/src/project05/app/views/articles/_form.html.haml:17: syntax error, unexpected '}', expecting ')'
+c:/Users/Alyse/Documents/cs446/src/project05/app/views/articles/_form.html.haml:22: unknown regexp options - dv
+c:/Users/Alyse/Documents/cs446/src/project05/app/views/articles/_form.html.haml:22: syntax error, unexpected $undefined
+));}\n</div>\n<div class='actions'>\n  #{
+             ^
+c:/Users/Alyse/Documents/cs446/src/project05/app/views/articles/_form.html.haml:22: syntax error, unexpected keyword_class, expecting keyword_do or '{' or '('
+));}\n</div>\n<div class='actions'>\n  #{
+                        ^
+c:/Users/Alyse/Documents/cs446/src/project05/app/views/articles/_form.html.haml:22: syntax error, unexpected $undefined
+));}\n</div>\n<div class='actions'>\n  #{
+                                    ^
+c:/Users/Alyse/Documents/cs446/src/project05/app/views/articles/_form.html.haml:24: syntax error, unexpected '}', expecting ')'
+));}\n</div>\n", -1, false);end
+    ^
+c:/Users/Alyse/Documents/cs446/src/project05/app/views/articles/_form.html.haml:24: unterminated regexp meets end of file
+c:/Users/Alyse/Documents/cs446/src/project05/app/views/articles/_form.html.haml:24: syntax error, unexpected $end, expecting ')'
+Function body:           def _app_views_articles__form_html_haml___947298055_34735488(local_assigns, output_buffer)
+            _old_virtual_path, @virtual_path = @virtual_path, "articles/_form";_old_output_buffer = @output_buffer;form = local_assigns[:form];;begin;extend Haml::Helpers;_hamlout = @haml_buffer = Haml::Buffer.new(@haml_buffer, {:autoclose=>["meta", "img", "link", "br", "hr", "input", "area", "param", "col", "base"], :preserve=>["textarea", "pre", "code"], :attr_wrapper=>"'", :ugly=>false, :format=>:html5, :encoding=>"UTF-8", :escape_html=>true, :escape_attrs=>true});_erbout = _hamlout.buffer;__in_erb_template = true;;haml_temp =  form_for(@article) do |f|
+ if @article.errors.any?
+_hamlout.push_text("<div id='error_explanation'>\n  <h2>\n    #{_hamlout.adjust_tabs(2); 
+
+_hamlout.format_script_false_false_false_true_false_true_false(( pluralize(@article.errors.count, "error")
+));}\n    prohibited this article from being saved:\n  </h2>\n  <ul>\n", 0, false);
+
+ @article.errors.full_messages.each do |msg|
+_hamlout.push_text("    <li>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_true_false_true_false((msg
+));}</li>\n", 0, false);end
+_hamlout.push_text("  </ul>\n</div>\n", -2, false);end
+_hamlout.push_text("<div class='field'>\n  #{_hamlout.adjust_tabs(1); _hamlout.format_script_false_false_false_true_false_true_false(( f.label :title
+));}\n  <br>\n  #{_hamlout.format_script_false_false_false_true_false_true_false(( f.text_field :title
+));}\n</div>\n<div class='field'>\n  #{
+_hamlout.format_script_false_false_false_true_false_true_false(( f.label :author
+));}\n  <br>\n  #{
+_hamlout.format_script_false_false_false_true_false_true_false(( f.select :author_id, Author.all.collect {|t| [t.name, t.id]}, {prompt: => 'Please select an author for your article'}
+));}\n</div>\n<div class='field'>\n  #{
+_hamlout.format_script_false_false_false_true_false_true_false(( f.label :body
+));}\n  <br>\n  #{
+_hamlout.format_script_false_false_false_true_false_true_false(( f.text_area :body
+));}\n</div>\n<div class='actions'>\n  #{
+_hamlout.format_script_false_false_false_true_false_true_false(( f.submit
+));}\n</div>\n", -1, false);end
+_hamlout.buffer << _hamlout.format_script_false_false_false_true_false_false_false(haml_temp);_hamlout.push_text("\n", 0, false);::Haml::Util.html_safe(_erbout);ensure;@haml_buffer = @haml_buffer.upper if @haml_buffer;end;
+          ensure
+            @virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+Backtrace: c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_view/template.rb:309:in `module_eval'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_view/template.rb:309:in `compile'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_view/template.rb:217:in `compile!'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_view/template.rb:170:in `block in render'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/activesupport-3.1.3/lib/active_support/notifications.rb:55:in `instrument'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_view/template.rb:169:in `render'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_view/renderer/partial_renderer.rb:256:in `render_partial'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_view/renderer/partial_renderer.rb:228:in `block (2 levels) in render'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_view/renderer/abstract_renderer.rb:33:in `block in instrument'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/activesupport-3.1.3/lib/active_support/notifications.rb:53:in `block in instrument'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/activesupport-3.1.3/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/activesupport-3.1.3/lib/active_support/notifications.rb:53:in `instrument'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_view/renderer/abstract_renderer.rb:33:in `instrument'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_view/renderer/partial_renderer.rb:227:in `block in render'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_view/renderer/abstract_renderer.rb:22:in `wrap_formats'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_view/renderer/partial_renderer.rb:219:in `render'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_view/renderer/renderer.rb:41:in `render_partial'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_view/helpers/rendering_helper.rb:27:in `render'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/haml-3.1.4/lib/haml/helpers/action_view_mods.rb:11:in `block in render_with_haml'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/haml-3.1.4/lib/haml/helpers.rb:90:in `non_haml'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/haml-3.1.4/lib/haml/helpers/action_view_mods.rb:11:in `render_with_haml'
+c:/Users/Alyse/Documents/cs446/src/project05/app/views/articles/new.html.haml:2:in `_app_views_articles_new_html_haml__567051284_35317428'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_view/template.rb:171:in `block in render'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/activesupport-3.1.3/lib/active_support/notifications.rb:55:in `instrument'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_view/template.rb:169:in `render'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_view/renderer/template_renderer.rb:40:in `block (2 levels) in render_template'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_view/renderer/abstract_renderer.rb:33:in `block in instrument'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/activesupport-3.1.3/lib/active_support/notifications.rb:53:in `block in instrument'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/activesupport-3.1.3/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/activesupport-3.1.3/lib/active_support/notifications.rb:53:in `instrument'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_view/renderer/abstract_renderer.rb:33:in `instrument'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_view/renderer/template_renderer.rb:39:in `block in render_template'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_view/renderer/template_renderer.rb:47:in `render_with_layout'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_view/renderer/template_renderer.rb:38:in `render_template'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_view/renderer/template_renderer.rb:12:in `block in render'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_view/renderer/abstract_renderer.rb:22:in `wrap_formats'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_view/renderer/template_renderer.rb:9:in `render'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_view/renderer/renderer.rb:36:in `render_template'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_view/renderer/renderer.rb:17:in `render'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/abstract_controller/rendering.rb:120:in `_render_template'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_controller/metal/streaming.rb:250:in `_render_template'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/abstract_controller/rendering.rb:114:in `render_to_body'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_controller/metal/renderers.rb:30:in `render_to_body'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_controller/metal/compatibility.rb:43:in `render_to_body'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/abstract_controller/rendering.rb:99:in `render'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_controller/metal/rendering.rb:16:in `render'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/activesupport-3.1.3/lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+c:/Ruby193/lib/ruby/1.9.1/benchmark.rb:295:in `realtime'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/activesupport-3.1.3/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_controller/metal/instrumentation.rb:78:in `cleanup_view_runtime'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/activerecord-3.1.3/lib/active_record/railties/controller_runtime.rb:24:in `cleanup_view_runtime'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_controller/metal/instrumentation.rb:39:in `render'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_controller/metal/mime_responds.rb:268:in `block in retrieve_response_from_mimes'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_controller/metal/mime_responds.rb:195:in `call'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_controller/metal/mime_responds.rb:195:in `respond_to'
+c:/Users/Alyse/Documents/cs446/src/project05/app/controllers/articles_controller.rb:30:in `new'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/abstract_controller/base.rb:167:in `process_action'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_controller/metal/rendering.rb:10:in `process_action'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/activesupport-3.1.3/lib/active_support/callbacks.rb:416:in `_run__537464324__process_action__41282740__callbacks'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/activesupport-3.1.3/lib/active_support/callbacks.rb:386:in `_run_process_action_callbacks'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/activesupport-3.1.3/lib/active_support/callbacks.rb:81:in `run_callbacks'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/abstract_controller/callbacks.rb:17:in `process_action'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_controller/metal/rescue.rb:17:in `process_action'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/activesupport-3.1.3/lib/active_support/notifications.rb:53:in `block in instrument'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/activesupport-3.1.3/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/activesupport-3.1.3/lib/active_support/notifications.rb:53:in `instrument'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_controller/metal/params_wrapper.rb:201:in `process_action'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/activerecord-3.1.3/lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/abstract_controller/base.rb:121:in `process'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/abstract_controller/rendering.rb:45:in `process'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_controller/metal.rb:193:in `dispatch'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_controller/metal.rb:236:in `block in action'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/routing/route_set.rb:65:in `call'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/routing/route_set.rb:65:in `dispatch'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/routing/route_set.rb:29:in `call'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/rack-mount-0.8.3/lib/rack/mount/route_set.rb:152:in `block in call'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/rack-mount-0.8.3/lib/rack/mount/code_generation.rb:96:in `block in recognize'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/rack-mount-0.8.3/lib/rack/mount/code_generation.rb:82:in `optimized_each'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/rack-mount-0.8.3/lib/rack/mount/code_generation.rb:95:in `recognize'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/rack-mount-0.8.3/lib/rack/mount/route_set.rb:141:in `call'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/routing/route_set.rb:532:in `call'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/rack-1.3.6/lib/rack/etag.rb:23:in `call'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/rack-1.3.6/lib/rack/conditionalget.rb:25:in `call'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/head.rb:14:in `call'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/flash.rb:247:in `call'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/rack-1.3.6/lib/rack/session/abstract/id.rb:195:in `context'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/rack-1.3.6/lib/rack/session/abstract/id.rb:190:in `call'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/cookies.rb:331:in `call'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/activerecord-3.1.3/lib/active_record/query_cache.rb:64:in `call'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/activerecord-3.1.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:477:in `call'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/activesupport-3.1.3/lib/active_support/callbacks.rb:392:in `_run_call_callbacks'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/activesupport-3.1.3/lib/active_support/callbacks.rb:81:in `run_callbacks'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/callbacks.rb:28:in `call'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/reloader.rb:68:in `call'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/rack-1.3.6/lib/rack/sendfile.rb:101:in `call'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/remote_ip.rb:48:in `call'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/show_exceptions.rb:47:in `call'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/railties-3.1.3/lib/rails/rack/logger.rb:13:in `call'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/rack-1.3.6/lib/rack/methodoverride.rb:24:in `call'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/rack-1.3.6/lib/rack/runtime.rb:17:in `call'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/activesupport-3.1.3/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/rack-1.3.6/lib/rack/lock.rb:15:in `call'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/static.rb:53:in `call'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/railties-3.1.3/lib/rails/engine.rb:456:in `call'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/rack-1.3.6/lib/rack/content_length.rb:14:in `call'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/railties-3.1.3/lib/rails/rack/log_tailer.rb:14:in `call'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/rack-1.3.6/lib/rack/handler/webrick.rb:59:in `service'
+c:/Ruby193/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+c:/Ruby193/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+c:/Ruby193/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+Rendered articles/_form.html.haml (8.0ms)
+Rendered articles/new.html.haml within layouts/application (13.0ms)
+Completed 500 Internal Server Error in 33ms
+
+ActionView::Template::Error (c:/Users/Alyse/Documents/cs446/src/project05/app/views/articles/_form.html.haml:17: syntax error, unexpected tASSOC
+...t| [t.name, t.id]}, {prompt: => 'Please select an author for...
+...                               ^
+c:/Users/Alyse/Documents/cs446/src/project05/app/views/articles/_form.html.haml:17: syntax error, unexpected '}', expecting ')'
+c:/Users/Alyse/Documents/cs446/src/project05/app/views/articles/_form.html.haml:22: unknown regexp options - dv
+c:/Users/Alyse/Documents/cs446/src/project05/app/views/articles/_form.html.haml:22: syntax error, unexpected $undefined
+));}\n</div>\n<div class='actions'>\n  #{
+             ^
+c:/Users/Alyse/Documents/cs446/src/project05/app/views/articles/_form.html.haml:22: syntax error, unexpected keyword_class, expecting keyword_do or '{' or '('
+));}\n</div>\n<div class='actions'>\n  #{
+                        ^
+c:/Users/Alyse/Documents/cs446/src/project05/app/views/articles/_form.html.haml:22: syntax error, unexpected $undefined
+));}\n</div>\n<div class='actions'>\n  #{
+                                    ^
+c:/Users/Alyse/Documents/cs446/src/project05/app/views/articles/_form.html.haml:24: syntax error, unexpected '}', expecting ')'
+));}\n</div>\n", -1, false);end
+    ^
+c:/Users/Alyse/Documents/cs446/src/project05/app/views/articles/_form.html.haml:24: unterminated regexp meets end of file
+c:/Users/Alyse/Documents/cs446/src/project05/app/views/articles/_form.html.haml:24: syntax error, unexpected $end, expecting ')'):
+    14:   .field
+    15:     = f.label :author
+    16:     %br/
+    17:     = f.select :author_id, Author.all.collect {|t| [t.name, t.id]}, {prompt: => 'Please select an author for your article'}
+    18:   .field
+    19:     = f.label :body
+    20:     %br/
+  app/views/articles/new.html.haml:2:in `_app_views_articles_new_html_haml__567051284_35317428'
+  app/controllers/articles_controller.rb:30:in `new'
+
+Rendered c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.0ms)
+Rendered c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+Rendered c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (17.0ms)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2012-03-05 17:14:13 -0700
+  Processing by ArticlesController#new as HTML
+  [1m[35mAuthor Load (0.0ms)[0m  SELECT "authors".* FROM "authors" 
+Rendered articles/_form.html.haml (77.0ms)
+Rendered articles/new.html.haml within layouts/application (84.0ms)
+Completed 500 Internal Server Error in 116ms
+
+ActionView::Template::Error (undefined method `author_id' for #<Article:0x4098468>):
+    14:   .field
+    15:     = f.label :author
+    16:     %br/
+    17:     = f.select :author_id, Author.all.collect {|t| [t.name, t.id]}, {:prompt => 'Please select a author for your article'}
+    18:   .field
+    19:     = f.label :body
+    20:     %br/
+  app/views/articles/_form.html.haml:17:in `block in _app_views_articles__form_html_haml___947298055_33883920'
+  app/views/articles/_form.html.haml:1:in `_app_views_articles__form_html_haml___947298055_33883920'
+  app/views/articles/new.html.haml:2:in `_app_views_articles_new_html_haml__567051284_35317428'
+  app/controllers/articles_controller.rb:30:in `new'
+
+Rendered c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+Rendered c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+Rendered c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (16.0ms)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2012-03-05 17:32:06 -0700
+  Processing by ArticlesController#new as HTML
+  [1m[36mAuthor Load (0.0ms)[0m  [1mSELECT "authors".* FROM "authors" [0m
+Rendered articles/_form.html.haml (49.0ms)
+Rendered articles/new.html.haml within layouts/application (54.0ms)
+Completed 500 Internal Server Error in 74ms
+
+ActionView::Template::Error (undefined method `author_id' for #<Article:0x4424808>):
+    14:   .field
+    15:     = f.label :author
+    16:     %br/
+    17:     = f.select :author_id, Author.all.collect {|t| [t.name, t.id]}, {:prompt => 'Please select a author for your article'}
+    18:   .field
+    19:     = f.label :body
+    20:     %br/
+  app/views/articles/_form.html.haml:17:in `block in _app_views_articles__form_html_haml___947298055_33883920'
+  app/views/articles/_form.html.haml:1:in `_app_views_articles__form_html_haml___947298055_33883920'
+  app/views/articles/new.html.haml:2:in `_app_views_articles_new_html_haml__567051284_35317428'
+  app/controllers/articles_controller.rb:30:in `new'
+
+Rendered c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+Rendered c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+Rendered c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (16.0ms)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2012-03-05 17:32:08 -0700
+  Processing by ArticlesController#new as HTML
+  [1m[35mAuthor Load (1.0ms)[0m  SELECT "authors".* FROM "authors" 
+Rendered articles/_form.html.haml (82.0ms)
+Rendered articles/new.html.haml within layouts/application (89.0ms)
+Completed 500 Internal Server Error in 111ms
+
+ActionView::Template::Error (undefined method `author_id' for #<Article:0x4352418>):
+    14:   .field
+    15:     = f.label :author
+    16:     %br/
+    17:     = f.select :author_id, Author.all.collect {|t| [t.name, t.id]}, {:prompt => 'Please select a author for your article'}
+    18:   .field
+    19:     = f.label :body
+    20:     %br/
+  app/views/articles/_form.html.haml:17:in `block in _app_views_articles__form_html_haml___947298055_33883920'
+  app/views/articles/_form.html.haml:1:in `_app_views_articles__form_html_haml___947298055_33883920'
+  app/views/articles/new.html.haml:2:in `_app_views_articles_new_html_haml__567051284_35317428'
+  app/controllers/articles_controller.rb:30:in `new'
+
+Rendered c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+Rendered c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+Rendered c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (16.0ms)
+  [1m[36m (0.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateArticles (20120213054040)
+Migrating to CreateAuthors (20120305235709)
+Migrating to AddAuthorIdToArticle (20120306003800)
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (0.0ms)[0m  [1mALTER TABLE "articles" ADD "author_id" integer[0m
+  [1m[35m (1.0ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20120306003800')
+  [1m[36m (0.0ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (1.0ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("articles")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("authors")
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2012-03-05 17:39:35 -0700
+  Processing by ArticlesController#new as HTML
+  [1m[36mAuthor Load (1.0ms)[0m  [1mSELECT "authors".* FROM "authors" [0m
+Rendered articles/_form.html.haml (78.0ms)
+Rendered articles/new.html.haml within layouts/application (84.0ms)
+Completed 200 OK in 107ms (Views: 103.0ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-03-05 17:39:35 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/authors" for 127.0.0.1 at 2012-03-05 17:44:40 -0700
+  Processing by AuthorsController#index as HTML
+  [1m[35mAuthor Load (1.0ms)[0m  SELECT "authors".* FROM "authors" 
+Rendered authors/index.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 38ms (Views: 35.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-03-05 17:44:40 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/authors/new" for 127.0.0.1 at 2012-03-05 17:44:42 -0700
+  Processing by AuthorsController#new as HTML
+Rendered authors/_form.html.erb (10.0ms)
+Rendered authors/new.html.erb within layouts/application (16.0ms)
+Completed 200 OK in 42ms (Views: 41.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-03-05 17:44:42 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started POST "/authors" for 127.0.0.1 at 2012-03-05 17:44:49 -0700
+  Processing by AuthorsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ah20zZukxfTKsLluOxV61P9f4omV4YqJ72WFjJmmElQ=", "author"=>{"name"=>"Alyse Haynes"}, "commit"=>"Create Author"}
+  [1m[36mSQL (4.0ms)[0m  [1mINSERT INTO "authors" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Tue, 06 Mar 2012 00:44:49 UTC +00:00], ["name", "Alyse Haynes"], ["updated_at", Tue, 06 Mar 2012 00:44:49 UTC +00:00]]
+Redirected to http://localhost:3000/authors/2
+Completed 302 Found in 24ms
+
+
+Started GET "/authors/2" for 127.0.0.1 at 2012-03-05 17:44:49 -0700
+  Processing by AuthorsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mAuthor Load (1.0ms)[0m  SELECT "authors".* FROM "authors" WHERE "authors"."id" = ? LIMIT 1  [["id", "2"]]
+Rendered authors/show.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 38ms (Views: 33.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-03-05 17:44:49 -0700
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/authors" for 127.0.0.1 at 2012-03-05 17:46:21 -0700
+  Processing by AuthorsController#index as HTML
+  [1m[36mAuthor Load (1.0ms)[0m  [1mSELECT "authors".* FROM "authors" [0m
+Rendered authors/index.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 41ms (Views: 38.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-03-05 17:46:21 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/authors/new" for 127.0.0.1 at 2012-03-05 17:46:23 -0700
+  Processing by AuthorsController#new as HTML
+Rendered authors/_form.html.erb (10.0ms)
+Rendered authors/new.html.erb within layouts/application (18.0ms)
+Completed 200 OK in 43ms (Views: 42.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-03-05 17:46:23 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started POST "/authors" for 127.0.0.1 at 2012-03-05 17:46:29 -0700
+  Processing by AuthorsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ah20zZukxfTKsLluOxV61P9f4omV4YqJ72WFjJmmElQ=", "author"=>{"name"=>"Pat Say-Jack"}, "commit"=>"Create Author"}
+Completed 500 Internal Server Error in 41ms
+
+NameError (undefined local variable or method `author' for #<Author:0x407dae0>):
+  app/models/author.rb:11:in `no_pats'
+  app/controllers/authors_controller.rb:46:in `block in create'
+  app/controllers/authors_controller.rb:45:in `create'
+
+Rendered c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+Rendered c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+Rendered c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (16.0ms)
+
+
+Started POST "/authors" for 127.0.0.1 at 2012-03-05 17:47:58 -0700
+  Processing by AuthorsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ah20zZukxfTKsLluOxV61P9f4omV4YqJ72WFjJmmElQ=", "author"=>{"name"=>"Pat Say-Jack"}, "commit"=>"Create Author"}
+Rendered authors/_form.html.erb (5.0ms)
+Rendered authors/new.html.erb within layouts/application (13.0ms)
+Completed 200 OK in 47ms (Views: 39.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-03-05 17:47:58 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started POST "/authors" for 127.0.0.1 at 2012-03-05 17:48:09 -0700
+  Processing by AuthorsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ah20zZukxfTKsLluOxV61P9f4omV4YqJ72WFjJmmElQ=", "author"=>{"name"=>"Jan Say-Jack"}, "commit"=>"Create Author"}
+  [1m[35mSQL (3.0ms)[0m  INSERT INTO "authors" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", Tue, 06 Mar 2012 00:48:09 UTC +00:00], ["name", "Jan Say-Jack"], ["updated_at", Tue, 06 Mar 2012 00:48:09 UTC +00:00]]
+Redirected to http://localhost:3000/authors/3
+Completed 302 Found in 25ms
+
+
+Started GET "/authors/3" for 127.0.0.1 at 2012-03-05 17:48:09 -0700
+  Processing by AuthorsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mAuthor Load (1.0ms)[0m  [1mSELECT "authors".* FROM "authors" WHERE "authors"."id" = ? LIMIT 1[0m  [["id", "3"]]
+Rendered authors/show.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 36ms (Views: 31.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-03-05 17:48:09 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2012-03-05 17:48:12 -0700
+  Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (1.0ms)[0m  SELECT "articles".* FROM "articles" 
+Rendered articles/index.html.haml within layouts/application (305.0ms)
+Completed 200 OK in 333ms (Views: 329.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-03-05 17:48:12 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/page_white_magnify.png" for 127.0.0.1 at 2012-03-05 17:48:12 -0700
+Served asset /page_white_magnify.png - 304 Not Modified (3ms)
+
+
+Started GET "/assets/pencil.png" for 127.0.0.1 at 2012-03-05 17:48:12 -0700
+Served asset /pencil.png - 304 Not Modified (2ms)
+
+
+Started GET "/assets/add.png" for 127.0.0.1 at 2012-03-05 17:48:12 -0700
+Served asset /add.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/page_delete.png" for 127.0.0.1 at 2012-03-05 17:48:12 -0700
+Served asset /page_delete.png - 304 Not Modified (0ms)
+
+
+Started GET "/articles/13/edit" for 127.0.0.1 at 2012-03-05 17:48:23 -0700
+  Processing by ArticlesController#edit as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mArticle Load (1.0ms)[0m  [1mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", "13"]]
+  [1m[35mAuthor Load (0.0ms)[0m  SELECT "authors".* FROM "authors" 
+Rendered articles/_form.html.haml (36.0ms)
+Rendered articles/edit.html.haml within layouts/application (56.0ms)
+Completed 200 OK in 90ms (Views: 85.0ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/assets/arrow_left.png" for 127.0.0.1 at 2012-03-05 17:48:23 -0700
+Served asset /arrow_left.png - 200 OK (11ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-03-05 17:48:23 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started PUT "/articles/13" for 127.0.0.1 at 2012-03-05 17:48:31 -0700
+  Processing by ArticlesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ah20zZukxfTKsLluOxV61P9f4omV4YqJ72WFjJmmElQ=", "article"=>{"title"=>"Man this article is sweet", "author_id"=>"1", "body"=>"\tThis article about articles is probably the sweetest article you'll ever read. \r\n\tArticles have a very article quality about them that you'll find extremly articly.\r\n\tAn article article is something that every article should have. Article.\r\n\t"}, "commit"=>"Update Article", "id"=>"13"}
+  [1m[36mArticle Load (0.0ms)[0m  [1mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", "13"]]
+  [1m[35mAuthor Load (0.0ms)[0m  SELECT "authors".* FROM "authors" WHERE "authors"."id" = 1 LIMIT 1
+  [1m[36m (2.0ms)[0m  [1mUPDATE "articles" SET "author_id" = 1, "updated_at" = '2012-03-06 00:48:31.440200' WHERE "articles"."id" = 13[0m
+Redirected to http://localhost:3000/articles
+Completed 302 Found in 231ms
+
+
+Started GET "/articles" for 127.0.0.1 at 2012-03-05 17:48:31 -0700
+  Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (0.0ms)[0m  SELECT "articles".* FROM "articles" 
+  [1m[36mAuthor Load (1.0ms)[0m  [1mSELECT "authors".* FROM "authors" WHERE "authors"."id" = 1 LIMIT 1[0m
+Rendered articles/index.html.haml within layouts/application (88.0ms)
+Completed 200 OK in 116ms (Views: 111.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-03-05 17:48:31 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/add.png" for 127.0.0.1 at 2012-03-05 17:48:31 -0700
+Served asset /add.png - 304 Not Modified (7ms)
+
+
+Started GET "/assets/page_white_magnify.png" for 127.0.0.1 at 2012-03-05 17:48:31 -0700
+Served asset /page_white_magnify.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pencil.png" for 127.0.0.1 at 2012-03-05 17:48:31 -0700
+Served asset /pencil.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/page_delete.png" for 127.0.0.1 at 2012-03-05 17:48:31 -0700
+Served asset /page_delete.png - 304 Not Modified (0ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2012-03-05 17:58:34 -0700
+  Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (1.0ms)[0m  SELECT "articles".* FROM "articles" 
+Rendered articles/index.html.haml within layouts/application (138.0ms)
+Completed 500 Internal Server Error in 165ms
+
+ActionView::Template::Error (undefined local variable or method `author' for #<#<Class:0x3fb3640>:0x3fb4588>):
+    18:     - @articles.each do |article|
+    19:       %tr{:class => cycle('even', 'odd')}
+    20:         %td= article.title
+    21:         %td= author.name
+    22:         %td= truncate(article.body, :length => 15)
+    23:         %td= article.created_at
+    24:         %td
+  app/views/articles/index.html.haml:21:in `block in _app_views_articles_index_html_haml__639547794_33412752'
+  app/views/articles/index.html.haml:18:in `each'
+  app/views/articles/index.html.haml:18:in `_app_views_articles_index_html_haml__639547794_33412752'
+  app/controllers/articles_controller.rb:8:in `index'
+
+Rendered c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+Rendered c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+Rendered c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (17.0ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2012-03-05 17:59:01 -0700
+  Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (1.0ms)[0m  [1mSELECT "articles".* FROM "articles" [0m
+Rendered articles/index.html.haml within layouts/application (132.0ms)
+Completed 500 Internal Server Error in 158ms
+
+ActionView::Template::Error (undefined local variable or method `authors' for #<#<Class:0x3c39048>:0x3c569b8>):
+    18:     - @articles.each do |article|
+    19:       %tr{:class => cycle('even', 'odd')}
+    20:         %td= article.title
+    21:         %td= authors.name
+    22:         %td= truncate(article.body, :length => 15)
+    23:         %td= article.created_at
+    24:         %td
+  app/views/articles/index.html.haml:21:in `block in _app_views_articles_index_html_haml__639547794_31650852'
+  app/views/articles/index.html.haml:18:in `each'
+  app/views/articles/index.html.haml:18:in `_app_views_articles_index_html_haml__639547794_31650852'
+  app/controllers/articles_controller.rb:8:in `index'
+
+Rendered c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+Rendered c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+Rendered c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (19.0ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2012-03-05 17:59:17 -0700
+  Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (1.0ms)[0m  SELECT "articles".* FROM "articles" 
+Rendered articles/index.html.haml within layouts/application (57.0ms)
+Completed 500 Internal Server Error in 82ms
+
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+    18:     - @articles.each do |article|
+    19:       %tr{:class => cycle('even', 'odd')}
+    20:         %td= article.title
+    21:         %td= @authors.name
+    22:         %td= truncate(article.body, :length => 15)
+    23:         %td= article.created_at
+    24:         %td
+  app/views/articles/index.html.haml:21:in `block in _app_views_articles_index_html_haml__639547794_33797784'
+  app/views/articles/index.html.haml:18:in `each'
+  app/views/articles/index.html.haml:18:in `_app_views_articles_index_html_haml__639547794_33797784'
+  app/controllers/articles_controller.rb:8:in `index'
+
+Rendered c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+Rendered c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+Rendered c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (19.0ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2012-03-05 17:59:37 -0700
+  Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.0ms)[0m  [1mSELECT "articles".* FROM "articles" [0m
+Rendered articles/index.html.haml within layouts/application (108.0ms)
+Completed 200 OK in 138ms (Views: 133.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-03-05 17:59:37 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/add.png" for 127.0.0.1 at 2012-03-05 17:59:37 -0700
+Served asset /add.png - 304 Not Modified (3ms)
+
+
+Started GET "/assets/page_white_magnify.png" for 127.0.0.1 at 2012-03-05 17:59:37 -0700
+Served asset /page_white_magnify.png - 304 Not Modified (3ms)
+
+
+Started GET "/assets/pencil.png" for 127.0.0.1 at 2012-03-05 17:59:37 -0700
+Served asset /pencil.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/page_delete.png" for 127.0.0.1 at 2012-03-05 17:59:37 -0700
+Served asset /page_delete.png - 304 Not Modified (2ms)
+
+
+Started GET "/authors" for 127.0.0.1 at 2012-03-05 21:33:19 -0700
+  Processing by AuthorsController#index as HTML
+  [1m[35mAuthor Load (0.0ms)[0m  SELECT "authors".* FROM "authors" 
+Rendered authors/index.html.erb within layouts/application (68.0ms)
+Completed 200 OK in 101ms (Views: 97.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-03-05 21:33:19 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/authors/1" for 127.0.0.1 at 2012-03-05 21:33:22 -0700
+  Processing by AuthorsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAuthor Load (1.0ms)[0m  [1mSELECT "authors".* FROM "authors" WHERE "authors"."id" = ? LIMIT 1[0m  [["id", "1"]]
+Rendered authors/show.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 34ms (Views: 29.0ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-03-05 21:33:22 -0700
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/authors" for 127.0.0.1 at 2012-03-05 21:33:23 -0700
+  Processing by AuthorsController#index as HTML
+  [1m[35mAuthor Load (0.0ms)[0m  SELECT "authors".* FROM "authors" 
+Rendered authors/index.html.erb within layouts/application (16.0ms)
+Completed 200 OK in 54ms (Views: 47.0ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-03-05 21:33:24 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2012-03-05 21:33:28 -0700
+  Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (1.0ms)[0m  [1mSELECT "articles".* FROM "articles" [0m
+Rendered articles/index.html.haml within layouts/application (124.0ms)
+Completed 200 OK in 153ms (Views: 149.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/pencil.png" for 127.0.0.1 at 2012-03-05 21:33:28 -0700
+Served asset /pencil.png - 304 Not Modified (5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-03-05 21:33:28 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/page_white_magnify.png" for 127.0.0.1 at 2012-03-05 21:33:28 -0700
+Served asset /page_white_magnify.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/page_delete.png" for 127.0.0.1 at 2012-03-05 21:33:28 -0700
+Served asset /page_delete.png - 304 Not Modified (2ms)
+
+
+Started GET "/assets/add.png" for 127.0.0.1 at 2012-03-05 21:33:28 -0700
+Served asset /add.png - 304 Not Modified (1ms)
+
+
+Started GET "/articles/14/edit" for 127.0.0.1 at 2012-03-05 21:33:31 -0700
+  Processing by ArticlesController#edit as HTML
+  Parameters: {"id"=>"14"}
+  [1m[35mArticle Load (1.0ms)[0m  SELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", "14"]]
+  [1m[36mAuthor Load (1.0ms)[0m  [1mSELECT "authors".* FROM "authors" [0m
+Rendered articles/_form.html.haml (35.0ms)
+Rendered articles/edit.html.haml within layouts/application (51.0ms)
+Completed 200 OK in 77ms (Views: 71.0ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-03-05 21:33:31 -0700
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started PUT "/articles/14" for 127.0.0.1 at 2012-03-05 21:33:35 -0700
+  Processing by ArticlesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ah20zZukxfTKsLluOxV61P9f4omV4YqJ72WFjJmmElQ=", "article"=>{"title"=>"Woof", "author_id"=>"1", "body"=>"I am a dog, and I like to bark. The end. "}, "commit"=>"Update Article", "id"=>"14"}
+  [1m[35mArticle Load (0.0ms)[0m  SELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", "14"]]
+  [1m[36mAuthor Load (1.0ms)[0m  [1mSELECT "authors".* FROM "authors" WHERE "authors"."id" = 1 LIMIT 1[0m
+  [1m[35m (2.0ms)[0m  UPDATE "articles" SET "author_id" = 1, "updated_at" = '2012-03-06 04:33:35.983600' WHERE "articles"."id" = 14
+Redirected to http://localhost:3000/articles
+Completed 302 Found in 55ms
+
+
+Started GET "/articles" for 127.0.0.1 at 2012-03-05 21:33:36 -0700
+  Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (1.0ms)[0m  [1mSELECT "articles".* FROM "articles" [0m
+Rendered articles/index.html.haml within layouts/application (64.0ms)
+Completed 200 OK in 92ms (Views: 89.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-03-05 21:33:36 -0700
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/add.png" for 127.0.0.1 at 2012-03-05 21:33:36 -0700
+Served asset /add.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pencil.png" for 127.0.0.1 at 2012-03-05 21:33:36 -0700
+Served asset /pencil.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/page_white_magnify.png" for 127.0.0.1 at 2012-03-05 21:33:36 -0700
+Served asset /page_white_magnify.png - 304 Not Modified (8ms)
+
+
+Started GET "/assets/page_delete.png" for 127.0.0.1 at 2012-03-05 21:33:36 -0700
+Served asset /page_delete.png - 304 Not Modified (1ms)
+
+
+Started GET "/articles/15/edit" for 127.0.0.1 at 2012-03-05 21:33:38 -0700
+  Processing by ArticlesController#edit as HTML
+  Parameters: {"id"=>"15"}
+  [1m[35mArticle Load (1.0ms)[0m  SELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", "15"]]
+  [1m[36mAuthor Load (0.0ms)[0m  [1mSELECT "authors".* FROM "authors" [0m
+Rendered articles/_form.html.haml (35.0ms)
+Rendered articles/edit.html.haml within layouts/application (52.0ms)
+Completed 200 OK in 81ms (Views: 76.0ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-03-05 21:33:38 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started PUT "/articles/15" for 127.0.0.1 at 2012-03-05 21:33:42 -0700
+  Processing by ArticlesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ah20zZukxfTKsLluOxV61P9f4omV4YqJ72WFjJmmElQ=", "article"=>{"title"=>"My Life", "author_id"=>"2", "body"=>"Lalalalalala\r\n\r\ndeedeedee\r\n\r\nho-hum"}, "commit"=>"Update Article", "id"=>"15"}
+  [1m[35mArticle Load (0.0ms)[0m  SELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", "15"]]
+  [1m[36mAuthor Load (0.0ms)[0m  [1mSELECT "authors".* FROM "authors" WHERE "authors"."id" = 2 LIMIT 1[0m
+  [1m[35m (3.0ms)[0m  UPDATE "articles" SET "author_id" = 2, "updated_at" = '2012-03-06 04:33:43.040600' WHERE "articles"."id" = 15
+Redirected to http://localhost:3000/articles
+Completed 302 Found in 86ms
+
+
+Started GET "/articles" for 127.0.0.1 at 2012-03-05 21:33:43 -0700
+  Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.0ms)[0m  [1mSELECT "articles".* FROM "articles" [0m
+Rendered articles/index.html.haml within layouts/application (71.0ms)
+Completed 200 OK in 102ms (Views: 97.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-03-05 21:33:43 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/add.png" for 127.0.0.1 at 2012-03-05 21:33:43 -0700
+Served asset /add.png - 304 Not Modified (48ms)
+
+
+Started GET "/assets/page_white_magnify.png" for 127.0.0.1 at 2012-03-05 21:33:43 -0700
+Served asset /page_white_magnify.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/page_delete.png" for 127.0.0.1 at 2012-03-05 21:33:43 -0700
+Served asset /page_delete.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/pencil.png" for 127.0.0.1 at 2012-03-05 21:33:43 -0700
+Served asset /pencil.png - 304 Not Modified (0ms)
+
+
+Started GET "/articles/16/edit" for 127.0.0.1 at 2012-03-05 21:33:46 -0700
+  Processing by ArticlesController#edit as HTML
+  Parameters: {"id"=>"16"}
+  [1m[35mArticle Load (0.0ms)[0m  SELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", "16"]]
+  [1m[36mAuthor Load (0.0ms)[0m  [1mSELECT "authors".* FROM "authors" [0m
+Rendered articles/_form.html.haml (39.0ms)
+Rendered articles/edit.html.haml within layouts/application (57.0ms)
+Completed 200 OK in 83ms (Views: 79.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-03-05 21:33:46 -0700
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started PUT "/articles/16" for 127.0.0.1 at 2012-03-05 21:33:49 -0700
+  Processing by ArticlesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ah20zZukxfTKsLluOxV61P9f4omV4YqJ72WFjJmmElQ=", "article"=>{"title"=>"ABC", "author_id"=>"3", "body"=>"It's easy as 123 ABC 123 baby you and me girl. "}, "commit"=>"Update Article", "id"=>"16"}
+  [1m[35mArticle Load (1.0ms)[0m  SELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", "16"]]
+  [1m[36mAuthor Load (0.0ms)[0m  [1mSELECT "authors".* FROM "authors" WHERE "authors"."id" = 3 LIMIT 1[0m
+  [1m[35m (2.0ms)[0m  UPDATE "articles" SET "author_id" = 3, "updated_at" = '2012-03-06 04:33:49.999800' WHERE "articles"."id" = 16
+Redirected to http://localhost:3000/articles
+Completed 302 Found in 56ms
+
+
+Started GET "/articles" for 127.0.0.1 at 2012-03-05 21:33:50 -0700
+  Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (1.0ms)[0m  [1mSELECT "articles".* FROM "articles" [0m
+Rendered articles/index.html.haml within layouts/application (63.0ms)
+Completed 200 OK in 122ms (Views: 118.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-03-05 21:33:50 -0700
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/add.png" for 127.0.0.1 at 2012-03-05 21:33:50 -0700
+Served asset /add.png - 304 Not Modified (15ms)
+
+
+Started GET "/assets/pencil.png" for 127.0.0.1 at 2012-03-05 21:33:50 -0700
+Served asset /pencil.png - 304 Not Modified (4ms)
+
+
+Started GET "/assets/page_delete.png" for 127.0.0.1 at 2012-03-05 21:33:50 -0700
+Served asset /page_delete.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/page_white_magnify.png" for 127.0.0.1 at 2012-03-05 21:33:50 -0700
+Served asset /page_white_magnify.png - 304 Not Modified (5ms)
+
+
+Started GET "/authors" for 127.0.0.1 at 2012-03-05 21:33:52 -0700
+  Processing by AuthorsController#index as HTML
+  [1m[35mAuthor Load (0.0ms)[0m  SELECT "authors".* FROM "authors" 
+Rendered authors/index.html.erb within layouts/application (48.0ms)
+Completed 200 OK in 75ms (Views: 72.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-03-05 21:33:53 -0700
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/authors/new" for 127.0.0.1 at 2012-03-05 21:33:54 -0700
+  Processing by AuthorsController#new as HTML
+Rendered authors/_form.html.erb (11.0ms)
+Rendered authors/new.html.erb within layouts/application (18.0ms)
+Completed 200 OK in 42ms (Views: 41.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-03-05 21:33:54 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started POST "/authors" for 127.0.0.1 at 2012-03-05 21:34:00 -0700
+  Processing by AuthorsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ah20zZukxfTKsLluOxV61P9f4omV4YqJ72WFjJmmElQ=", "author"=>{"name"=>"Joe Schmo"}, "commit"=>"Create Author"}
+  [1m[36mSQL (2.0ms)[0m  [1mINSERT INTO "authors" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Tue, 06 Mar 2012 04:34:00 UTC +00:00], ["name", "Joe Schmo"], ["updated_at", Tue, 06 Mar 2012 04:34:00 UTC +00:00]]
+Redirected to http://localhost:3000/authors/4
+Completed 302 Found in 26ms
+
+
+Started GET "/authors/4" for 127.0.0.1 at 2012-03-05 21:34:00 -0700
+  Processing by AuthorsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mAuthor Load (1.0ms)[0m  SELECT "authors".* FROM "authors" WHERE "authors"."id" = ? LIMIT 1  [["id", "4"]]
+Rendered authors/show.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 36ms (Views: 31.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-03-05 21:34:00 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/authors" for 127.0.0.1 at 2012-03-05 21:34:02 -0700
+  Processing by AuthorsController#index as HTML
+  [1m[36mAuthor Load (1.0ms)[0m  [1mSELECT "authors".* FROM "authors" [0m
+Rendered authors/index.html.erb within layouts/application (17.0ms)
+Completed 200 OK in 44ms (Views: 41.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-03-05 21:34:02 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/authors/new" for 127.0.0.1 at 2012-03-05 21:34:03 -0700
+  Processing by AuthorsController#new as HTML
+Rendered authors/_form.html.erb (11.0ms)
+Rendered authors/new.html.erb within layouts/application (17.0ms)
+Completed 200 OK in 40ms (Views: 38.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-03-05 21:34:03 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started POST "/authors" for 127.0.0.1 at 2012-03-05 21:34:25 -0700
+  Processing by AuthorsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ah20zZukxfTKsLluOxV61P9f4omV4YqJ72WFjJmmElQ=", "author"=>{"name"=>"Jill Whats-Her-Face"}, "commit"=>"Create Author"}
+  [1m[35mSQL (3.0ms)[0m  INSERT INTO "authors" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", Tue, 06 Mar 2012 04:34:26 UTC +00:00], ["name", "Jill Whats-Her-Face"], ["updated_at", Tue, 06 Mar 2012 04:34:26 UTC +00:00]]
+Redirected to http://localhost:3000/authors/5
+Completed 302 Found in 24ms
+
+
+Started GET "/authors/5" for 127.0.0.1 at 2012-03-05 21:34:26 -0700
+  Processing by AuthorsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mAuthor Load (1.0ms)[0m  [1mSELECT "authors".* FROM "authors" WHERE "authors"."id" = ? LIMIT 1[0m  [["id", "5"]]
+Rendered authors/show.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 35ms (Views: 31.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-03-05 21:34:26 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2012-03-05 21:34:29 -0700
+  Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (0.0ms)[0m  SELECT "articles".* FROM "articles" 
+Rendered articles/index.html.haml within layouts/application (60.0ms)
+Completed 200 OK in 88ms (Views: 83.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-03-05 21:34:29 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/page_white_magnify.png" for 127.0.0.1 at 2012-03-05 21:34:29 -0700
+Served asset /page_white_magnify.png - 304 Not Modified (6ms)
+
+
+Started GET "/assets/page_delete.png" for 127.0.0.1 at 2012-03-05 21:34:29 -0700
+Served asset /page_delete.png - 304 Not Modified (2ms)
+
+
+Started GET "/assets/add.png" for 127.0.0.1 at 2012-03-05 21:34:29 -0700
+Served asset /add.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/pencil.png" for 127.0.0.1 at 2012-03-05 21:34:29 -0700
+Served asset /pencil.png - 304 Not Modified (3ms)
+
+
+Started GET "/articles/17/edit" for 127.0.0.1 at 2012-03-05 21:34:32 -0700
+  Processing by ArticlesController#edit as HTML
+  Parameters: {"id"=>"17"}
+  [1m[36mArticle Load (0.0ms)[0m  [1mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", "17"]]
+  [1m[35mAuthor Load (0.0ms)[0m  SELECT "authors".* FROM "authors" 
+Rendered articles/_form.html.haml (35.0ms)
+Rendered articles/edit.html.haml within layouts/application (52.0ms)
+Completed 200 OK in 79ms (Views: 74.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-03-05 21:34:33 -0700
+Served asset /application.css - 304 Not Modified (3ms)
+
+
+Started PUT "/articles/17" for 127.0.0.1 at 2012-03-05 21:34:36 -0700
+  Processing by ArticlesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ah20zZukxfTKsLluOxV61P9f4omV4YqJ72WFjJmmElQ=", "article"=>{"title"=>"LALA", "author_id"=>"4", "body"=>"We'll see if this works! Nope! my name is Pat but for now I'll go by Julie"}, "commit"=>"Update Article", "id"=>"17"}
+  [1m[36mArticle Load (1.0ms)[0m  [1mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", "17"]]
+  [1m[35mAuthor Load (0.0ms)[0m  SELECT "authors".* FROM "authors" WHERE "authors"."id" = 4 LIMIT 1
+  [1m[36m (2.0ms)[0m  [1mUPDATE "articles" SET "author_id" = 4, "updated_at" = '2012-03-06 04:34:36.833600' WHERE "articles"."id" = 17[0m
+Redirected to http://localhost:3000/articles
+Completed 302 Found in 145ms
+
+
+Started GET "/articles" for 127.0.0.1 at 2012-03-05 21:34:36 -0700
+  Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (0.0ms)[0m  SELECT "articles".* FROM "articles" 
+Rendered articles/index.html.haml within layouts/application (64.0ms)
+Completed 200 OK in 132ms (Views: 127.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-03-05 21:34:37 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/page_white_magnify.png" for 127.0.0.1 at 2012-03-05 21:34:37 -0700
+Served asset /page_white_magnify.png - 304 Not Modified (2ms)
+
+
+Started GET "/assets/pencil.png" for 127.0.0.1 at 2012-03-05 21:34:37 -0700
+Served asset /pencil.png - 304 Not Modified (3ms)
+
+
+Started GET "/assets/page_delete.png" for 127.0.0.1 at 2012-03-05 21:34:37 -0700
+Served asset /page_delete.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/add.png" for 127.0.0.1 at 2012-03-05 21:34:37 -0700
+Served asset /add.png - 304 Not Modified (8ms)
+
+
+Started GET "/articles/18/edit" for 127.0.0.1 at 2012-03-05 21:34:39 -0700
+  Processing by ArticlesController#edit as HTML
+  Parameters: {"id"=>"18"}
+  [1m[36mArticle Load (1.0ms)[0m  [1mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", "18"]]
+  [1m[35mAuthor Load (0.0ms)[0m  SELECT "authors".* FROM "authors" 
+Rendered articles/_form.html.haml (35.0ms)
+Rendered articles/edit.html.haml within layouts/application (52.0ms)
+Completed 200 OK in 93ms (Views: 89.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-03-05 21:34:39 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started PUT "/articles/18" for 127.0.0.1 at 2012-03-05 21:34:42 -0700
+  Processing by ArticlesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ah20zZukxfTKsLluOxV61P9f4omV4YqJ72WFjJmmElQ=", "article"=>{"title"=>"Holla", "author_id"=>"4", "body"=>"Holla\r\nHolla\r\nHolla\r\nHolla\r\nHolla\r\nHolla\r\nHolla\r\nHolla\r\nHolla\r\nHolla\r\nHolla\r\nHolla\r\nHolla\r\nHolla is not spelled wrong!"}, "commit"=>"Update Article", "id"=>"18"}
+  [1m[36mArticle Load (1.0ms)[0m  [1mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", "18"]]
+  [1m[35mAuthor Load (0.0ms)[0m  SELECT "authors".* FROM "authors" WHERE "authors"."id" = 4 LIMIT 1
+  [1m[36m (2.0ms)[0m  [1mUPDATE "articles" SET "author_id" = 4, "updated_at" = '2012-03-06 04:34:42.438600' WHERE "articles"."id" = 18[0m
+Redirected to http://localhost:3000/articles
+Completed 302 Found in 57ms
+
+
+Started GET "/articles" for 127.0.0.1 at 2012-03-05 21:34:42 -0700
+  Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (0.0ms)[0m  SELECT "articles".* FROM "articles" 
+Rendered articles/index.html.haml within layouts/application (77.0ms)
+Completed 200 OK in 115ms (Views: 107.0ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-03-05 21:34:42 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/page_white_magnify.png" for 127.0.0.1 at 2012-03-05 21:34:42 -0700
+Served asset /page_white_magnify.png - 304 Not Modified (2ms)
+
+
+Started GET "/assets/add.png" for 127.0.0.1 at 2012-03-05 21:34:42 -0700
+Served asset /add.png - 304 Not Modified (5ms)
+
+
+Started GET "/assets/pencil.png" for 127.0.0.1 at 2012-03-05 21:34:42 -0700
+Served asset /pencil.png - 304 Not Modified (3ms)
+
+
+Started GET "/assets/page_delete.png" for 127.0.0.1 at 2012-03-05 21:34:42 -0700
+Served asset /page_delete.png - 304 Not Modified (0ms)
+
+
+Started GET "/articles/19/edit" for 127.0.0.1 at 2012-03-05 21:34:45 -0700
+  Processing by ArticlesController#edit as HTML
+  Parameters: {"id"=>"19"}
+  [1m[36mArticle Load (0.0ms)[0m  [1mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", "19"]]
+  [1m[35mAuthor Load (0.0ms)[0m  SELECT "authors".* FROM "authors" 
+Rendered articles/_form.html.haml (36.0ms)
+Rendered articles/edit.html.haml within layouts/application (52.0ms)
+Completed 200 OK in 78ms (Views: 74.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-03-05 21:34:45 -0700
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started PUT "/articles/19" for 127.0.0.1 at 2012-03-05 21:34:48 -0700
+  Processing by ArticlesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ah20zZukxfTKsLluOxV61P9f4omV4YqJ72WFjJmmElQ=", "article"=>{"title"=>"Jmmm", "author_id"=>"2", "body"=>"lfmdofamlckmasodiasfcm\r\naslkdnaslkfijsafcnmc\r\nasdnsaodisalkfas\r\naskfnsaoldfjsalkdma\r\nasldknaslofmsalfm"}, "commit"=>"Update Article", "id"=>"19"}
+  [1m[36mArticle Load (0.0ms)[0m  [1mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", "19"]]
+  [1m[35mAuthor Load (0.0ms)[0m  SELECT "authors".* FROM "authors" WHERE "authors"."id" = 2 LIMIT 1
+  [1m[36m (2.0ms)[0m  [1mUPDATE "articles" SET "author_id" = 2, "updated_at" = '2012-03-06 04:34:48.256200' WHERE "articles"."id" = 19[0m
+Redirected to http://localhost:3000/articles
+Completed 302 Found in 99ms
+
+
+Started GET "/articles" for 127.0.0.1 at 2012-03-05 21:34:48 -0700
+  Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (0.0ms)[0m  SELECT "articles".* FROM "articles" 
+Rendered articles/index.html.haml within layouts/application (64.0ms)
+Completed 200 OK in 93ms (Views: 89.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-03-05 21:34:48 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/add.png" for 127.0.0.1 at 2012-03-05 21:34:48 -0700
+Served asset /add.png - 304 Not Modified (5ms)
+
+
+Started GET "/assets/pencil.png" for 127.0.0.1 at 2012-03-05 21:34:48 -0700
+Served asset /pencil.png - 304 Not Modified (6ms)
+
+
+Started GET "/assets/page_white_magnify.png" for 127.0.0.1 at 2012-03-05 21:34:48 -0700
+Served asset /page_white_magnify.png - 304 Not Modified (2ms)
+
+
+Started GET "/assets/page_delete.png" for 127.0.0.1 at 2012-03-05 21:34:48 -0700
+Served asset /page_delete.png - 304 Not Modified (0ms)
+
+
+Started GET "/articles/20/edit" for 127.0.0.1 at 2012-03-05 21:34:51 -0700
+  Processing by ArticlesController#edit as HTML
+  Parameters: {"id"=>"20"}
+  [1m[36mArticle Load (0.0ms)[0m  [1mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", "20"]]
+  [1m[35mAuthor Load (0.0ms)[0m  SELECT "authors".* FROM "authors" 
+Rendered articles/_form.html.haml (36.0ms)
+Rendered articles/edit.html.haml within layouts/application (52.0ms)
+Completed 200 OK in 77ms (Views: 73.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-03-05 21:34:51 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started PUT "/articles/20" for 127.0.0.1 at 2012-03-05 21:34:55 -0700
+  Processing by ArticlesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ah20zZukxfTKsLluOxV61P9f4omV4YqJ72WFjJmmElQ=", "article"=>{"title"=>"Helflsfkm", "author_id"=>"3", "body"=>"mdasldmasdas\r\nasmdsalkdjsalkd\r\nsadkmsafsjafmsa\r\nsafknfalskjfas\r\naslfnasolfdmaslfdm"}, "commit"=>"Update Article", "id"=>"20"}
+  [1m[36mArticle Load (1.0ms)[0m  [1mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", "20"]]
+  [1m[35mAuthor Load (0.0ms)[0m  SELECT "authors".* FROM "authors" WHERE "authors"."id" = 3 LIMIT 1
+  [1m[36m (2.0ms)[0m  [1mUPDATE "articles" SET "author_id" = 3, "updated_at" = '2012-03-06 04:34:55.571200' WHERE "articles"."id" = 20[0m
+Redirected to http://localhost:3000/articles
+Completed 302 Found in 55ms
+
+
+Started GET "/articles" for 127.0.0.1 at 2012-03-05 21:34:55 -0700
+  Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (1.0ms)[0m  SELECT "articles".* FROM "articles" 
+Rendered articles/index.html.haml within layouts/application (106.0ms)
+Completed 200 OK in 140ms (Views: 134.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-03-05 21:34:55 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/page_white_magnify.png" for 127.0.0.1 at 2012-03-05 21:34:55 -0700
+Served asset /page_white_magnify.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/add.png" for 127.0.0.1 at 2012-03-05 21:34:55 -0700
+Served asset /add.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pencil.png" for 127.0.0.1 at 2012-03-05 21:34:55 -0700
+Served asset /pencil.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/page_delete.png" for 127.0.0.1 at 2012-03-05 21:34:55 -0700
+Served asset /page_delete.png - 304 Not Modified (2ms)
+
+
+Started GET "/articles/21/edit" for 127.0.0.1 at 2012-03-05 21:34:57 -0700
+  Processing by ArticlesController#edit as HTML
+  Parameters: {"id"=>"21"}
+  [1m[36mArticle Load (0.0ms)[0m  [1mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", "21"]]
+  [1m[35mAuthor Load (1.0ms)[0m  SELECT "authors".* FROM "authors" 
+Rendered articles/_form.html.haml (35.0ms)
+Rendered articles/edit.html.haml within layouts/application (87.0ms)
+Completed 200 OK in 113ms (Views: 106.0ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-03-05 21:34:58 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started PUT "/articles/21" for 127.0.0.1 at 2012-03-05 21:35:04 -0700
+  Processing by ArticlesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ah20zZukxfTKsLluOxV61P9f4omV4YqJ72WFjJmmElQ=", "article"=>{"title"=>"Medmsd;s", "author_id"=>"5", "body"=>"mdfkas;dfa\r\naslmdfas;fkmsa;f\r\nsafmsalfkmsalkfd\r\nmlsakfnaslfjas\r\nlfknasdjasd\r\nalkfjasodfsldkfmas\r\nfasfmalsdmas;dka\r\nalsfkmsladas;dksa;dk\r\nyupp"}, "commit"=>"Update Article", "id"=>"21"}
+  [1m[36mArticle Load (0.0ms)[0m  [1mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", "21"]]
+  [1m[35mAuthor Load (1.0ms)[0m  SELECT "authors".* FROM "authors" WHERE "authors"."id" = 5 LIMIT 1
+  [1m[36m (2.0ms)[0m  [1mUPDATE "articles" SET "author_id" = 5, "updated_at" = '2012-03-06 04:35:04.302400' WHERE "articles"."id" = 21[0m
+Redirected to http://localhost:3000/articles
+Completed 302 Found in 56ms
+
+
+Started GET "/articles" for 127.0.0.1 at 2012-03-05 21:35:04 -0700
+  Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (0.0ms)[0m  SELECT "articles".* FROM "articles" 
+Rendered articles/index.html.haml within layouts/application (65.0ms)
+Completed 200 OK in 91ms (Views: 87.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-03-05 21:35:04 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/add.png" for 127.0.0.1 at 2012-03-05 21:35:04 -0700
+Served asset /add.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/page_white_magnify.png" for 127.0.0.1 at 2012-03-05 21:35:04 -0700
+Served asset /page_white_magnify.png - 304 Not Modified (3ms)
+
+
+Started GET "/assets/page_delete.png" for 127.0.0.1 at 2012-03-05 21:35:04 -0700
+Served asset /page_delete.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/pencil.png" for 127.0.0.1 at 2012-03-05 21:35:04 -0700
+Served asset /pencil.png - 304 Not Modified (1ms)
+
+
+Started GET "/articles/22/edit" for 127.0.0.1 at 2012-03-05 21:35:06 -0700
+  Processing by ArticlesController#edit as HTML
+  Parameters: {"id"=>"22"}
+  [1m[36mArticle Load (1.0ms)[0m  [1mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", "22"]]
+  [1m[35mAuthor Load (0.0ms)[0m  SELECT "authors".* FROM "authors" 
+Rendered articles/_form.html.haml (35.0ms)
+Rendered articles/edit.html.haml within layouts/application (51.0ms)
+Completed 200 OK in 78ms (Views: 73.0ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-03-05 21:35:06 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started PUT "/articles/22" for 127.0.0.1 at 2012-03-05 21:35:10 -0700
+  Processing by ArticlesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ah20zZukxfTKsLluOxV61P9f4omV4YqJ72WFjJmmElQ=", "article"=>{"title"=>"WHY", "author_id"=>"5", "body"=>"lskdmsad;lks\r\nsdmsldks\r\ndasldkmsadlksad\r\nasdmlaskdmasd\r\nsdmsaldksad\r\nskdmsaldmas\r\ndmsaldmsadk"}, "commit"=>"Update Article", "id"=>"22"}
+  [1m[36mArticle Load (0.0ms)[0m  [1mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", "22"]]
+  [1m[35mAuthor Load (0.0ms)[0m  SELECT "authors".* FROM "authors" WHERE "authors"."id" = 5 LIMIT 1
+  [1m[36m (2.0ms)[0m  [1mUPDATE "articles" SET "author_id" = 5, "updated_at" = '2012-03-06 04:35:10.289000' WHERE "articles"."id" = 22[0m
+Redirected to http://localhost:3000/articles
+Completed 302 Found in 55ms
+
+
+Started GET "/articles" for 127.0.0.1 at 2012-03-05 21:35:10 -0700
+  Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (0.0ms)[0m  SELECT "articles".* FROM "articles" 
+Rendered articles/index.html.haml within layouts/application (97.0ms)
+Completed 200 OK in 124ms (Views: 120.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-03-05 21:35:10 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/add.png" for 127.0.0.1 at 2012-03-05 21:35:10 -0700
+Served asset /add.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/page_white_magnify.png" for 127.0.0.1 at 2012-03-05 21:35:10 -0700
+Served asset /page_white_magnify.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pencil.png" for 127.0.0.1 at 2012-03-05 21:35:10 -0700
+Served asset /pencil.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/page_delete.png" for 127.0.0.1 at 2012-03-05 21:35:10 -0700
+Served asset /page_delete.png - 304 Not Modified (0ms)
+
+
+Started GET "/articles/23/edit" for 127.0.0.1 at 2012-03-05 21:35:14 -0700
+  Processing by ArticlesController#edit as HTML
+  Parameters: {"id"=>"23"}
+  [1m[36mArticle Load (0.0ms)[0m  [1mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", "23"]]
+  [1m[35mAuthor Load (1.0ms)[0m  SELECT "authors".* FROM "authors" 
+Rendered articles/_form.html.haml (72.0ms)
+Rendered articles/edit.html.haml within layouts/application (88.0ms)
+Completed 200 OK in 114ms (Views: 107.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-03-05 21:35:14 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started PUT "/articles/23" for 127.0.0.1 at 2012-03-05 21:35:19 -0700
+  Processing by ArticlesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ah20zZukxfTKsLluOxV61P9f4omV4YqJ72WFjJmmElQ=", "article"=>{"title"=>"Jamma ", "author_id"=>"5", "body"=>"Bananas in Pajammas."}, "commit"=>"Update Article", "id"=>"23"}
+  [1m[36mArticle Load (0.0ms)[0m  [1mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", "23"]]
+  [1m[35mAuthor Load (0.0ms)[0m  SELECT "authors".* FROM "authors" WHERE "authors"."id" = 5 LIMIT 1
+  [1m[36m (2.0ms)[0m  [1mUPDATE "articles" SET "author_id" = 5, "updated_at" = '2012-03-06 04:35:19.643800' WHERE "articles"."id" = 23[0m
+Redirected to http://localhost:3000/articles
+Completed 302 Found in 62ms
+
+
+Started GET "/articles" for 127.0.0.1 at 2012-03-05 21:35:19 -0700
+  Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (1.0ms)[0m  SELECT "articles".* FROM "articles" 
+Rendered articles/index.html.haml within layouts/application (62.0ms)
+Completed 200 OK in 90ms (Views: 86.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-03-05 21:35:19 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/add.png" for 127.0.0.1 at 2012-03-05 21:35:19 -0700
+Served asset /add.png - 304 Not Modified (4ms)
+
+
+Started GET "/assets/page_white_magnify.png" for 127.0.0.1 at 2012-03-05 21:35:19 -0700
+Served asset /page_white_magnify.png - 304 Not Modified (6ms)
+
+
+Started GET "/assets/pencil.png" for 127.0.0.1 at 2012-03-05 21:35:20 -0700
+Served asset /pencil.png - 304 Not Modified (2ms)
+
+
+Started GET "/assets/page_delete.png" for 127.0.0.1 at 2012-03-05 21:35:20 -0700
+Served asset /page_delete.png - 304 Not Modified (2ms)
+
+
+Started GET "/articles/24/edit" for 127.0.0.1 at 2012-03-05 21:35:21 -0700
+  Processing by ArticlesController#edit as HTML
+  Parameters: {"id"=>"24"}
+  [1m[36mArticle Load (0.0ms)[0m  [1mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", "24"]]
+  [1m[35mAuthor Load (1.0ms)[0m  SELECT "authors".* FROM "authors" 
+Rendered articles/_form.html.haml (36.0ms)
+Rendered articles/edit.html.haml within layouts/application (51.0ms)
+Completed 200 OK in 78ms (Views: 71.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-03-05 21:35:22 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started PUT "/articles/24" for 127.0.0.1 at 2012-03-05 21:35:25 -0700
+  Processing by ArticlesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ah20zZukxfTKsLluOxV61P9f4omV4YqJ72WFjJmmElQ=", "article"=>{"title"=>"Helllllloooo", "author_id"=>"1", "body"=>"ldkfjdkasdksad\r\nsalkdjsaldfkasd\r\naslkdmasldjsa\r\nalskdnsalkda"}, "commit"=>"Update Article", "id"=>"24"}
+  [1m[36mArticle Load (1.0ms)[0m  [1mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", "24"]]
+  [1m[35mAuthor Load (0.0ms)[0m  SELECT "authors".* FROM "authors" WHERE "authors"."id" = 1 LIMIT 1
+  [1m[36m (3.0ms)[0m  [1mUPDATE "articles" SET "author_id" = 1, "updated_at" = '2012-03-06 04:35:26.072800' WHERE "articles"."id" = 24[0m
+Redirected to http://localhost:3000/articles
+Completed 302 Found in 55ms
+
+
+Started GET "/articles" for 127.0.0.1 at 2012-03-05 21:35:26 -0700
+  Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (0.0ms)[0m  SELECT "articles".* FROM "articles" 
+Rendered articles/index.html.haml within layouts/application (111.0ms)
+Completed 200 OK in 138ms (Views: 134.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-03-05 21:35:26 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pencil.png" for 127.0.0.1 at 2012-03-05 21:35:26 -0700
+Served asset /pencil.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/add.png" for 127.0.0.1 at 2012-03-05 21:35:26 -0700
+Served asset /add.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/page_white_magnify.png" for 127.0.0.1 at 2012-03-05 21:35:26 -0700
+Served asset /page_white_magnify.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/page_delete.png" for 127.0.0.1 at 2012-03-05 21:35:26 -0700
+Served asset /page_delete.png - 304 Not Modified (0ms)
+
+
+Started GET "/articles/25/edit" for 127.0.0.1 at 2012-03-05 21:35:28 -0700
+  Processing by ArticlesController#edit as HTML
+  Parameters: {"id"=>"25"}
+  [1m[36mArticle Load (0.0ms)[0m  [1mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", "25"]]
+  [1m[35mAuthor Load (1.0ms)[0m  SELECT "authors".* FROM "authors" 
+Rendered articles/_form.html.haml (68.0ms)
+Rendered articles/edit.html.haml within layouts/application (87.0ms)
+Completed 200 OK in 113ms (Views: 107.0ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-03-05 21:35:28 -0700
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started PUT "/articles/25" for 127.0.0.1 at 2012-03-05 21:35:31 -0700
+  Processing by ArticlesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ah20zZukxfTKsLluOxV61P9f4omV4YqJ72WFjJmmElQ=", "article"=>{"title"=>"Sdkjsl", "author_id"=>"4", "body"=>"ldlskdjsaldkjsad\r\nsd;sadslakdmslakd\r\nasdksalkdfjsaldkjsa\r\ndalskfdnlsakdfjsad;\r\nasdlsakfdjsalkdjas\r\nalskdjalskdjsa\r\ndasdjlsakdjalsd\r\nasdjsldkasd\r\nlkjsdflsadjsald\r\naslkdsalkdj"}, "commit"=>"Update Article", "id"=>"25"}
+  [1m[36mArticle Load (1.0ms)[0m  [1mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", "25"]]
+  [1m[35mAuthor Load (0.0ms)[0m  SELECT "authors".* FROM "authors" WHERE "authors"."id" = 4 LIMIT 1
+  [1m[36m (3.0ms)[0m  [1mUPDATE "articles" SET "author_id" = 4, "updated_at" = '2012-03-06 04:35:31.875200' WHERE "articles"."id" = 25[0m
+Redirected to http://localhost:3000/articles
+Completed 302 Found in 56ms
+
+
+Started GET "/articles" for 127.0.0.1 at 2012-03-05 21:35:31 -0700
+  Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (0.0ms)[0m  SELECT "articles".* FROM "articles" 
+Rendered articles/index.html.haml within layouts/application (64.0ms)
+Completed 200 OK in 91ms (Views: 87.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-03-05 21:35:32 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/page_white_magnify.png" for 127.0.0.1 at 2012-03-05 21:35:32 -0700
+Served asset /page_white_magnify.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pencil.png" for 127.0.0.1 at 2012-03-05 21:35:32 -0700
+Served asset /pencil.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/page_delete.png" for 127.0.0.1 at 2012-03-05 21:35:32 -0700
+Served asset /page_delete.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/add.png" for 127.0.0.1 at 2012-03-05 21:35:32 -0700
+Served asset /add.png - 304 Not Modified (1ms)
+
+
+Started GET "/authors" for 127.0.0.1 at 2012-03-05 21:47:16 -0700
+  Processing by AuthorsController#index as HTML
+  [1m[36mAuthor Load (0.0ms)[0m  [1mSELECT "authors".* FROM "authors" [0m
+Rendered authors/index.html.erb within layouts/application (20.0ms)
+Completed 200 OK in 47ms (Views: 44.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-03-05 21:47:16 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/authors/2" for 127.0.0.1 at 2012-03-05 21:47:17 -0700
+  Processing by AuthorsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mAuthor Load (1.0ms)[0m  SELECT "authors".* FROM "authors" WHERE "authors"."id" = ? LIMIT 1  [["id", "2"]]
+Rendered authors/show.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 37ms (Views: 33.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-03-05 21:47:17 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/authors/1" for 127.0.0.1 at 2012-03-05 21:48:34 -0700
+  Processing by AuthorsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAuthor Load (0.0ms)[0m  [1mSELECT "authors".* FROM "authors" WHERE "authors"."id" = ? LIMIT 1[0m  [["id", "1"]]
+Rendered authors/show.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 36ms (Views: 32.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-03-05 21:48:34 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/authors" for 127.0.0.1 at 2012-03-05 21:49:21 -0700
+  Processing by AuthorsController#index as HTML
+  [1m[35mAuthor Load (0.0ms)[0m  SELECT "authors".* FROM "authors" 
+Rendered authors/index.html.erb within layouts/application (19.0ms)
+Completed 200 OK in 45ms (Views: 41.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-03-05 21:49:21 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/authors/1" for 127.0.0.1 at 2012-03-05 21:49:22 -0700
+  Processing by AuthorsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAuthor Load (0.0ms)[0m  [1mSELECT "authors".* FROM "authors" WHERE "authors"."id" = ? LIMIT 1[0m  [["id", "1"]]
+Rendered authors/show.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 36ms (Views: 32.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-03-05 21:49:23 -0700
+Served asset /application.css - 304 Not Modified (0ms)

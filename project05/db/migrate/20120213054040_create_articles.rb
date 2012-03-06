@@ -5,6 +5,7 @@ class CreateArticles < ActiveRecord::Migration
       t.string :author, :null => flase
       t.text :body, null => false
 	  t.integer :update_count, :default => 0
+	  t.integer :author_id
       t.timestamps
     end
   end

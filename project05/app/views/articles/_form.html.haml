@@ -14,7 +14,7 @@
   .field
     = f.label :author
     %br/
-    = f.text_field :author
+    = f.select :author_id, Author.all.collect {|t| [t.name, t.id]}, {:prompt => 'Please select a author for your article'}
   .field
     = f.label :body
     %br/
