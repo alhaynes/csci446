@@ -5,3 +5,8 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+Game.delete_all
+
+Game.create(title: 'Frogger',
+rating: 'Through the roof',
+author: 'Smiley Hats')
