@@ -1,4 +1,12 @@
 Gamez::Application.routes.draw do
+  
+  controller :user_sessions do
+	get 'login' => :new
+	post 'login' => :create
+	get 'logout' => :destroy
+	post 'logout' => :destroy
+  end
+  
   resources :user_sessions
 
   resources :users

@@ -1,3 +1,3 @@
-class User_session < Authlogic::Session::Base
-	User.create(params[:user])
+class UserSession < Authlogic::Session::Base
+
 end
