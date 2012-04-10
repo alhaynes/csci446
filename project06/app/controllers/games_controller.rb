@@ -1,4 +1,6 @@
 class GamesController < ApplicationController
+  filter_resource_access 
+
   # GET /games
   # GET /games.json
   def index
@@ -13,7 +15,7 @@ class GamesController < ApplicationController
   # GET /games/1
   # GET /games/1.json
   def show
-    @game = Game.find(params[:id])
+    #@game = Game.find(params[:id])
 
     respond_to do |format|
       format.html # show.html.erb
@@ -24,7 +26,7 @@ class GamesController < ApplicationController
   # GET /games/new
   # GET /games/new.json
   def new
-    @game = Game.new
+    #@game = Game.new
 
     respond_to do |format|
       format.html # new.html.erb
@@ -34,13 +36,13 @@ class GamesController < ApplicationController
 
   # GET /games/1/edit
   def edit
-    @game = Game.find(params[:id])
+    #@game = Game.find(params[:id])
   end
 
   # POST /games
   # POST /games.json
   def create
-    @game = Game.new(params[:game])
+    #@game = Game.new(params[:game])
 
     respond_to do |format|
       if @game.save
@@ -56,7 +58,7 @@ class GamesController < ApplicationController
   # PUT /games/1
   # PUT /games/1.json
   def update
-    @game = Game.find(params[:id])
+    #@game = Game.find(params[:id])
 
     respond_to do |format|
       if @game.update_attributes(params[:game])
@@ -72,7 +74,7 @@ class GamesController < ApplicationController
   # DELETE /games/1
   # DELETE /games/1.json
   def destroy
-    @game = Game.find(params[:id])
+    #@game = Game.find(params[:id])
     @game.destroy
 
     respond_to do |format|

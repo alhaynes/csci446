@@ -2,6 +2,7 @@ class ApplicationController < ActionController::Base
 
   helper :all
   protect_from_forgery
+ filter_resource_access
   
   helper_method :current_user
   private

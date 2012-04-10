@@ -1,5 +1,7 @@
 Gamez::Application.routes.draw do
   
+  resources :roles
+
   controller :user_sessions do
 	get 'login' => :new
 	post 'login' => :create

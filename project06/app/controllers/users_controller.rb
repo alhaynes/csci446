@@ -25,14 +25,7 @@ class UsersController < ApplicationController
   # GET /users/new.json
   def new
     @user = User.new
-	if @user.save
-		flash[:notice] = "Registration Succesful."
-		format.html { redirect_to root_url }
-	end
-    respond_to do |format|
-      format.html # new.html.erb
-      format.json { render json: @user }
-    end
+
   end
 
   # GET /users/1/edit
@@ -46,8 +39,8 @@ class UsersController < ApplicationController
     @user = User.new(params[:user])
 
     respond_to do |format|
-      if @user.save
-        format.html { redirect_to @user, notice: 'User was successfully created.' }
+      if verify_recaptcha(:model => @user) && @user.save
+        format.html { redirect_to root_url, notice: 'User was successfully created.' }
         format.json { render json: @user, status: :created, location: @user }
       else
         format.html { render action: "new" }
