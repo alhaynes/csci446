@@ -1,5 +1,5 @@
 class ApplicationController < ActionController::Base
-
+  layout :layout
   helper :all
   protect_from_forgery
  filter_resource_access
@@ -14,5 +14,17 @@ class ApplicationController < ActionController::Base
   def current_user
 	return @current_user if defined?(@current_user)
 	@current_user = current_user_session && current_user_session.record
+  end
+  
+  def layout
+	if @current_user
+		if permitted_to? :manage, :games
+			'admin'
+		else 
+			'members'
+		end
+	else 
+		'public'
+	end
   end
 end
