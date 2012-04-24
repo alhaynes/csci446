@@ -34,6 +34,18 @@ input#btnGuess {
   font-size: 20em;
 }
 
+h2#toolow, h2#toohigh , h2#youLose{
+	color: red;
+	font-size: 3em;
+}
+
+h2#youWin{
+	color: green;
+	font-size: 3em;
+}
+
+
+
 form#guessTheNumber {
   width: 50%;
   margin: auto;

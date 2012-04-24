@@ -2,14 +2,33 @@ var guessesLeft = 10;
 var highScores = new Array([9, "HarryJamesPotter"], [3, "ZedCthulhu"], [2, "NearlyDied"]);
 
 // Generate a random number
-var randomnumber = Math.floor(Math.random()*101)
+var randomNumber = Math.floor(Math.random()*101)
 
+// Make the statment for toohigh/toolow
+$("#toolow").hide();
+$("#toohigh").hide();
+$("#youWin").hide();
+$("#youLose").hide();
 
 $("#btnGuess").click(function() {
-	if(){
+	if($("#guess").val() == randomNumber){
+		$("#youWin").show();
+		alert("Play again if you dare");
+	} else {
+		if(guessesLeft == 0){
+			$("youLose").show();
+			alert("Play again if you dare");
+		}
+		guessesLeft = guessesLeft - 1;
+		updateScore(guessesLeft);
+		if($("#guess").val() < randomNumber){
+			$("#toolow").show();
+			$("#toolow").fadeOut(2000);
+		} else if($("#guess").val() > randomNumber){
+			$("#toohigh").show();
+			$("#toohigh").fadeOut(2000);
+		} 
 	}
-	guessesLeft = guessesLeft - 1;
-	updateScore(guessesLeft);
 });
 
 $(function() {
