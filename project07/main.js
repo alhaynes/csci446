@@ -13,24 +13,29 @@ $("#youLose").hide();
 $("#btnGuess").click(function() {
 	if($("#guess").val() > 100 || $("#guess").val() < 0){
 		alert("If you want to win, I suggest only guessing between 0 and 100");
-	}
-	if($("#guess").val() == randomNumber){
-		$("#youWin").show();
-		alert("Play again if you dare");
 	} else {
-		guessesLeft = guessesLeft - 1;
-		if(guessesLeft == 0){
-			$("youLose").show();
-			alert("Play again if you dare");
+		if($("#guess").val() == randomNumber){
+			$("#youWin").show();
+			if(confirm("YOU WIN!! Play again if you dare")){
+				window.location.reload();
+			}
+		} else {
+			guessesLeft = guessesLeft - 1;
+			if(guessesLeft == 0){
+				$("youLose").show();
+				if(confirm("YOU LOST - Play again for your life depends on it!")){
+					window.location.reload();
+				}
+			}
+			updateScore(guessesLeft);
+			if($("#guess").val() < randomNumber){
+				$("#toolow").show();
+				$("#toolow").fadeOut(2000);
+			} else if($("#guess").val() > randomNumber){
+				$("#toohigh").show();
+				$("#toohigh").fadeOut(2000);
+			} 
 		}
-		updateScore(guessesLeft);
-		if($("#guess").val() < randomNumber){
-			$("#toolow").show();
-			$("#toolow").fadeOut(2000);
-		} else if($("#guess").val() > randomNumber){
-			$("#toohigh").show();
-			$("#toohigh").fadeOut(2000);
-		} 
 	}
 });
 
