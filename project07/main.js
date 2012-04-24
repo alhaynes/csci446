@@ -1,6 +1,17 @@
 var guessesLeft = 10;
 var highScores = new Array([9, "HarryJamesPotter"], [3, "ZedCthulhu"], [2, "NearlyDied"]);
 
+// Generate a random number
+var randomnumber = Math.floor(Math.random()*101)
+
+
+$("#btnGuess").click(function() {
+	if(){
+	}
+	guessesLeft = guessesLeft - 1;
+	updateScore(guessesLeft);
+});
+
 $(function() {
   updateScore(guessesLeft);
   populateHighScores(highScores);
@@ -13,5 +24,6 @@ function populateHighScores(scores) {
 }
 
 function updateScore(score) {
-  $('h2#score span#guessesLeft').append(score);
+  $('h2#score span#guessesLeft').html(score);
 }
+
