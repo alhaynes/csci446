@@ -1,5 +1,5 @@
 var guessesLeft = 10;
-var highScores = new Array([9, "HarryJamesPotter"], [3, "ZedCthulhu"], [2, "NearlyDied"]);
+var highScores = new Array([3, "ZedCthulhu"], [9, "HarryJamesPotter"], [2, "NearlyDied"]);
 
 // Generate a random number
 var randomNumber = Math.floor(Math.random()*101)
@@ -16,15 +16,18 @@ $("#btnGuess").click(function() {
 	} else {
 		if($("#guess").val() == randomNumber){
 			$("#youWin").show();
+			var name = prompt("Enter your name: ");
+			highScores.push([guessesLeft, name]);
+			populateHighScores(highScores);
 			if(confirm("YOU WIN!! Play again if you dare")){
-				window.location.reload();
+				newGame();
 			}
 		} else {
 			guessesLeft = guessesLeft - 1;
 			if(guessesLeft == 0){
 				$("youLose").show();
 				if(confirm("YOU LOST - Play again for your life depends on it!")){
-					window.location.reload();
+					newGame();
 				}
 			}
 			updateScore(guessesLeft);
@@ -45,6 +48,8 @@ $(function() {
 });
 
 function populateHighScores(scores) {
+	scores.sort(function(a,b) { return a[0] < b[0]; }); 
+	$('div#highScores').html("");
   for (var i = 0; i < scores.length; ++i) {
     $('div#highScores').append("<p>" + scores[i][0] + " " + scores[i][1] + "</p>");
   }
@@ -54,3 +59,11 @@ function updateScore(score) {
   $('h2#score span#guessesLeft').html(score);
 }
 
+function newGame(){
+	$("#youWin").hide();
+	$("#youLose").hide();
+	randomNumber = Math.floor(Math.random()*101);
+	guessesLeft = 10;
+	updateScore(guessesLeft);
+}
+	
